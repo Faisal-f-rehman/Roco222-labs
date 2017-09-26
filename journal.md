@@ -1,0 +1,132 @@
+
+# **Lab1**
+
+
+Links used for Lab1 research:
+
+ [github cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)  
+ [edutechional youtube](https://www.youtube.com/watch?v=_gknWWa2OF0)  
+ [dev notes](http://dev-notes.eu/2016/01/images-in-kramdown-jekyll/)  
+
+
+## *Step 1 – Write your first Markdown document*
+
+**Look on the Web what is Markdown, and start your lab journal using the Markdown syntax. In this first journal entry, describe what Markdown is about, and write down the key syntax rules. For now, you can write a single document for the two of you. Name it journal.md**
+
+Markdown is a language designed to edit text for different layouts and styles in plain text format which is then converted into HTML 
+
+Like any other programming language Markdown has a lot of syntax rules, some of these are as follows:
+
+* Hash key '#' before a sentence from 1 '#' key to 6 keys makes the text size larger for headers, where 1 being the largest size and 6 the smallest  
+						# H1
+						## H2
+						### H3
+						#### H4
+						##### H5
+						###### H6
+
+* For Bold, italic and crossed out words or sentences:  
+**Bold** - use double asterics (**) or double underscores (__) before and after the sentence  
+*Italic* - use single asteric (*) or single underscore (_) before and after the sentence  
+~~crossed out~~ - use double tildes (~~) before and after the sentence   
+**Combined Bold and _Italic_** - use the appropriate number for symbols ie use double (**) or (__) for bold before and after words that are meant to be bold and single (*) or (_) for italics
+
+
+* For a line break without any space between lines use two consecutive spaces followed by enter, at the end of the sentence/line  
+For a line break with space between two lines press enter twice at the end of the sentence, ie like a you would in a plain text format
+
+* For numbered list enter a number(1) with a full stop(.) followed by a space and then the sentence followed by an enter:  
+		1. one
+		2. two
+		3. three
+
+* For bullet points use (*), (-) or (+) followed by a space for each bullet point:  
+								* First
+								* Second
+								* third 
+
+
+
+## *Step 2 – Command-line 101*
+
+**Find and open a terminal (also called console).**  
+
+**Try the following commands and briefly write down in your lab journal what they do. If something is not clear, man <command> should provide you with some help (man stands for manual).**
+
+
+**$ ls**  
+provides a list directories present in the current directory
+
+**$ cd /tmp**  
+cd = change directory, in this example it changes directory to tmp
+
+**$ cd $HOME # what are those things starting with '$'?**  
+$ is a symbol for the shell it means that the terminal can take the code after this symbol
+
+**$ mkdir**  
+mkdir = make directory, it makes a new directory
+
+**$ echo "Hello" > hello.md**  
+echo is a command of bash (bash provides some added commands for the shell/terminal) which returns arguments for a given command
+
+**$ cat hello.md**  
+cat command has three functions, displaying a file, combining copies of files and creating new ones. In this instance a new file named hello in markdown format is created.
+
+**$ cp hello.md hello-again.md**  
+cp command makes a copy of the file in the same location or a given destination, in this instance the file hello.md is copied into the same directory but is renamed as hello-again.md
+ 
+**$ mv hello-again.md hello-hello.md**  
+mv command moves the file into a new location or the same location with a new name. in this instance the file hello-again.md is renamed into hello-hello.md
+
+**$ rm hello.md**  
+rm command removes the specified file. In this instance hello.md file is deleted
+
+**$ rm -rf # be careful with that one!**
+rm -r is a command that deletes files repeatedly eg when removing an entire directory and rm -f command is force remove, together it removes files recursively and forcefully
+ 
+**$ cat /proc/cpuinfo # is 'cpuinfo' a file??**
+This command creates a file called cpuinfo in the proc directory. cpuinfo contains information about the cpu in use.
+
+
+**Create a roco222 subdirectory in your home directory, then one subdirectory for each of you, and finally a sub-subdirectory named lab-journal. Make a copy of your lab journal in each of these directories.**
+
+
+$ cd $HOME
+$ mkdir roco222
+$ cd $HOME/roco222
+$ mkdir Faisal
+$ cd $HOME/roco222/Faisal
+$ mkdir lab-journal
+$ cd $HOME
+$ cp journal.md $HOME/roco222/Faisal/lab-journal
+
+## *Step 3 – Create a GitHub account*
+
+**git is a widely-used tool to manage code and other text-based documents. You will use it to manage your lab journal. GitHub is a (proprietary) online platform to share git repositories. While not required to use git, we will make use of GitHub today. If you do not already have an account, create one from the website: https://github.com.**
+
+[my github repository](https://github.com/Faisal-f-rehman/journal.md/tree/master)
+
+
+## *Step 4 – Your first git repository*
+
+**Initialise the each of your git repositories by navigating to each of the directories you created. Type git init in there. The name of the directory is the name of your repository.**
+
+**That’s it: a git repository is a regular directory, with one special item: an hidden .git/ directory that stores all the objects git manipulates (mainly binary blobs representing files or parts of files).**
+
+$ cd $HOME/roco222/Faisal/lab-journal
+$ git init
+
+**As this is the first time you are using git, you need to tell it what is your name and what is your email address, so that all your changes are effectively attributed to you. In each of the repositories, type:**
+
+**_$ git config user.name "Firstname Surname"_**
+**_$ git config user.email "<email>"_**
+
+
+## *Step 5 – Your first commit*
+
+**We are going to commit the current state of your lab journal: since the file journal.md is not yet known to git, first add it: git add journal.md , and then create a new commit with git commit.**
+
+**git will ask you for a commit message (a commit message is made of a mandatory one-line summary –usually maximum 72 characters long – and a longer, optional, description that explains in greater details what this commit is about).**
+
+**The commit summary must be concise yet must describe accurately the content of the change. For instance, “Created journal – initial report on Markdown syntax”.**
+
