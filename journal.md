@@ -130,3 +130,41 @@ $ git init
 
 **The commit summary must be concise yet must describe accurately the content of the change. For instance, “Created journal – initial report on Markdown syntax”.**
 
+$ git add journal.md
+$ git commit -m "first commit"
+
+# *Step 6 – Version tracking*
+
+**Add a new entry in your journals describing what you have just learnt about git.**
+
+**Using git status , review the changes and commit them ( git commit <your file> , choosing an appropriate commit message.**
+
+Using git we can record changes to our files over time so that we can recall specific versions later.
+
+$ git status  
+On branch master
+nothing to commit, working directory clean
+
+$git commit journal -m "second commit"
+
+
+# *Step 7 – Going social*
+
+**Until now, you have only worked on a local git repository: this is a perfectly legitimate use of git. As a dis-tributed version control system (DVCS), git is meant to support a wide range of code workflows, including purely local workflows: if you do not need to share your code over Internet, why would you need an Internet connection to benefit code versioning?**
+
+**However, git is particularly powerful when working in groups: the core idea is that each participant own a full copy of a repository, and exchanges commits through pushes (to send commits to others) and pulls (to get commits from others). As you can see on the figure below (and contrary to traditional VCS like SVN), you do not need to use a central server (but you can!): git is distributed, each participant own a full, autonomous copy of the repository and can obtain (pull) commits from any other participant.**
+
+**Distant repositories can be on a remote Internet server like GitHub, on your colleagues’ computers, or even on a USB stick that you carry over with you. git calls them remotes. You can add as many remotes as you want to your local repository by giving them names.**
+
+**Often, you will have one main remote, which is traditionally called origin (but it’s up to you to choose a different name!).**
+
+**Add GitHub as a remote repository to your local git repository.**
+**First create an empty repository on GitHub:**
+
+**Name it after your local repository (not mandatory, but convenient), and do not check the checkbox “Initialize this repository with a README” since you already have one.**
+**Then, add this remote to your local repository, and push your changes online:**
+
+$ cd <REPO DIR> # for instance $HOME/roco222/joe/journal
+$ git remote add origin https://github.com/<account>/<repo>.git # add a remote called origin
+$ git push -u origin # push all your local commits to GitHub
+
