@@ -214,5 +214,8 @@ While trying to correct these errors I also learnt that commits where the most r
 
 **Once logged onto the robot, the following Python program will get the robot to say something:**
 
+#### Complete the lab journal
+
+**Complete your lab journal with your experience connecting to the robot, commit and push it to your git repo. Include as well the Python script, either as a separate Python file, or directly in your Markdown document (research first how to include code snippets in a Markdown document).**
 
 
