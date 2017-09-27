@@ -19,13 +19,20 @@ Like any other programming language Markdown has a lot of syntax rules, some of 
 
 * Hash key '#' before a sentence from 1 '#' key to 6 keys makes the text size larger for headers, where 1 being the largest size and 6 the smallest  
 						# H1
+     
 						## H2
+
 						### H3
+
 						#### H4
+
 						##### H5
+
 						###### H6
 
-* For Bold, italic and crossed out words or sentences:  
+
+* For Bold, italic and crossed out words or sentences:
+
 **Bold** - use double asterics (**) or double underscores (__) before and after the sentence  
 *Italic* - use single asteric (*) or single underscore (_) before and after the sentence  
 ~~crossed out~~ - use double tildes (~~) before and after the sentence   
@@ -37,13 +44,19 @@ For a line break with space between two lines press enter twice at the end of th
 
 * For numbered list enter a number(1) with a full stop(.) followed by a space and then the sentence followed by an enter:  
 		1. one
+
 		2. two
+
 		3. three
+
 
 * For bullet points use (*), (-) or (+) followed by a space for each bullet point:  
 								* First
+
 								* Second
+
 								* third 
+
 
 
 
@@ -81,10 +94,10 @@ mv command moves the file into a new location or the same location with a new na
 **$ rm hello.md**  
 rm command removes the specified file. In this instance hello.md file is deleted
 
-**$ rm -rf # be careful with that one!**
+**$ rm -rf # be careful with that one!**  
 rm -r is a command that deletes files repeatedly eg when removing an entire directory and rm -f command is force remove, together it removes files recursively and forcefully
  
-**$ cat /proc/cpuinfo # is 'cpuinfo' a file??**
+**$ cat /proc/cpuinfo # is 'cpuinfo' a file??**  
 This command creates a file called cpuinfo in the proc directory. cpuinfo contains information about the cpu in use.
 
 
@@ -121,9 +134,10 @@ $ git init
 
 **As this is the first time you are using git, you need to tell it what is your name and what is your email address, so that all your changes are effectively attributed to you. In each of the repositories, type:**
 
+```
 **_$ git config user.name "Firstname Surname"_**
 **_$ git config user.email "<email>"_**
-
+```
 
 ## *Step 5 – Your first commit*
 
@@ -170,9 +184,11 @@ $git commit journal -m "second commit"
 **Name it after your local repository (not mandatory, but convenient), and do not check the checkbox “Initialize this repository with a README” since you already have one.**
 **Then, add this remote to your local repository, and push your changes online:**
 
+```
 $ cd <REPO DIR> # for instance $HOME/roco222/joe/journal
 $ git remote add origin https://github.com/<account>/<repo>.git # add a remote called origin
 $ git push -u origin # push all your local commits to GitHub
+```
 
 ```python
 $ cd $HOME/roco222/Faisal/lab-journal
