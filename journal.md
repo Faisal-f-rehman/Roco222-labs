@@ -19,17 +19,17 @@ Like any other programming language Markdown has a lot of syntax rules, some of 
 
 * Hash key '#' before a sentence from 1 '#' key to 6 keys makes the text size larger for headers, where 1 being the largest size and 6 the smallest
 
-						# H1
+		# H1
      
-						## H2
+		## H2
 
-						### H3
+		### H3
 
-						#### H4
+		#### H4
 
-						##### H5
+		##### H5
 
-						###### H6
+		###### H6
 
 
 * For Bold, italic and crossed out words or sentences:
@@ -54,11 +54,11 @@ For a line break with space between two lines press enter twice at the end of th
 
 * For bullet points use (*), (-) or (+) followed by a space for each bullet point:
 
-								* First
+		* First
 
-								* Second
+		* Second
 
-								* third 
+		* third 
 
 
 
