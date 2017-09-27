@@ -8,7 +8,7 @@ Links used for Lab1 research:
  [edutechional youtube](https://www.youtube.com/watch?v=_gknWWa2OF0)  
  [dev notes](http://dev-notes.eu/2016/01/images-in-kramdown-jekyll/)  
 
-
+# *Part I*
 ## *Step 1 – Write your first Markdown document*
 
 **Look on the Web what is Markdown, and start your lab journal using the Markdown syntax. In this first journal entry, describe what Markdown is about, and write down the key syntax rules. For now, you can write a single document for the two of you. Name it journal.md**
@@ -90,7 +90,7 @@ This command creates a file called cpuinfo in the proc directory. cpuinfo contai
 
 **Create a roco222 subdirectory in your home directory, then one subdirectory for each of you, and finally a sub-subdirectory named lab-journal. Make a copy of your lab journal in each of these directories.**
 
-
+```python
 $ cd $HOME
 $ mkdir roco222
 $ cd $HOME/roco222
@@ -99,6 +99,7 @@ $ cd $HOME/roco222/Faisal
 $ mkdir lab-journal
 $ cd $HOME
 $ cp journal.md $HOME/roco222/Faisal/lab-journal
+```
 
 ## *Step 3 – Create a GitHub account*
 
@@ -113,8 +114,10 @@ $ cp journal.md $HOME/roco222/Faisal/lab-journal
 
 **That’s it: a git repository is a regular directory, with one special item: an hidden .git/ directory that stores all the objects git manipulates (mainly binary blobs representing files or parts of files).**
 
+```python
 $ cd $HOME/roco222/Faisal/lab-journal
 $ git init
+```
 
 **As this is the first time you are using git, you need to tell it what is your name and what is your email address, so that all your changes are effectively attributed to you. In each of the repositories, type:**
 
@@ -130,8 +133,10 @@ $ git init
 
 **The commit summary must be concise yet must describe accurately the content of the change. For instance, “Created journal – initial report on Markdown syntax”.**
 
+```python
 $ git add journal.md
 $ git commit -m "first commit"
+```
 
 # *Step 6 – Version tracking*
 
@@ -141,12 +146,13 @@ $ git commit -m "first commit"
 
 Using git we can record changes to our files over time so that we can recall specific versions later.
 
+```python
 $ git status  
 On branch master
 nothing to commit, working directory clean
 
 $git commit journal -m "second commit"
-
+```
 
 # *Step 7 – Going social*
 
@@ -167,4 +173,27 @@ $git commit journal -m "second commit"
 $ cd <REPO DIR> # for instance $HOME/roco222/joe/journal
 $ git remote add origin https://github.com/<account>/<repo>.git # add a remote called origin
 $ git push -u origin # push all your local commits to GitHub
+
+```python
+$ cd $HOME/roco222/Faisal/lab-journal
+$ git remote add origin https://github.com/Faisal-f-rehman/journal.md/tree/master)
+$ git push -u origin master
+```
+
+I decided to setup ssh route and started getting errors to do with the stream, but after some research online I found out that I was pushing through the wrong repository when I was meant to push the master repository. 
+
+While trying to correct these errors I also learnt that commits where the most recent version of my journal.md file kept in the head of the three stages of git.
+
+
+# *Part II*
+## *Hack into a robot*
+
+**Quite simple really. Figure out a way to log into the robot. Those two bits of information should be sufficient:**  
+**it’s an Aldebaran’s Nao and its name is ’chapman’.**
+
+**Obviously, you are not allowed to physically interact with it :-)**
+
+**Once logged onto the robot, the following Python program will get the robot to say something:**
+
+
 
