@@ -17,7 +17,8 @@ Markdown is a language designed to edit text for different layouts and styles in
 
 Like any other programming language Markdown has a lot of syntax rules, some of these are as follows:
 
-* Hash key '#' before a sentence from 1 '#' key to 6 keys makes the text size larger for headers, where 1 being the largest size and 6 the smallest  
+* Hash key '#' before a sentence from 1 '#' key to 6 keys makes the text size larger for headers, where 1 being the largest size and 6 the smallest
+
 						# H1
      
 						## H2
@@ -42,7 +43,8 @@ Like any other programming language Markdown has a lot of syntax rules, some of 
 * For a line break without any space between lines use two consecutive spaces followed by enter, at the end of the sentence/line  
 For a line break with space between two lines press enter twice at the end of the sentence, ie like a you would in a plain text format
 
-* For numbered list enter a number(1) with a full stop(.) followed by a space and then the sentence followed by an enter:  
+* For numbered list enter a number(1) with a full stop(.) followed by a space and then the sentence followed by an enter:
+
 		1. one
 
 		2. two
@@ -50,7 +52,8 @@ For a line break with space between two lines press enter twice at the end of th
 		3. three
 
 
-* For bullet points use (*), (-) or (+) followed by a space for each bullet point:  
+* For bullet points use (*), (-) or (+) followed by a space for each bullet point:
+
 								* First
 
 								* Second
