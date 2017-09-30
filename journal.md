@@ -218,4 +218,18 @@ While trying to correct these errors I also learnt that commits where the most r
 
 **Complete your lab journal with your experience connecting to the robot, commit and push it to your git repo. Include as well the Python script, either as a separate Python file, or directly in your Markdown document (research first how to include code snippets in a Markdown document).**
 
+```
+$ping chapman.local
+
+This gave us the IP address while loading (192.168.0.184)
+
+Then we used the IP address to connect via ssh:  
+$ ssh nao@192.168.0.184
+
+This connected us to Nao
+
+Once connected, we used the nano test editor and the instructions present in the labsheet to enter a text to speech command, and saved it as a python file (.py).
+
+Then in the chapman directory we called the saved python file ($ python filename.py) which executed the file and made nao speak the text provided in the nano text editor.
+
 
