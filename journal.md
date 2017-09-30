@@ -218,18 +218,27 @@ While trying to correct these errors I also learnt that commits where the most r
 
 **Complete your lab journal with your experience connecting to the robot, commit and push it to your git repo. Include as well the Python script, either as a separate Python file, or directly in your Markdown document (research first how to include code snippets in a Markdown document).**
 
-```
-$ping chapman.local
+Connecting to Nao was a very exciting task full of trial and error, full of frustration, confusion and very exhilarating. 
 
-This gave us the IP address while loading (192.168.0.184)
+We tried to follow the instructions online to connect to Nao but understandably it didnt point out that Nao could be connected to a local network only, which was pointed out to us by Dr Lemaignan. I also learnt that pings are very small packages sent and received to and from the selected IP address, which made sense, since smaller packages would be faster to transfer.
+
+Then we pinged the name chapman (Nao Robot):![Nao]( nao/nao/nao.jpg )
+```
+$ ping chapman.local
+
+```
+This gave us the IP address while it was pinging (192.168.0.184)
 
 Then we used the IP address to connect via ssh:  
+
+```
 $ ssh nao@192.168.0.184
+```
 
-This connected us to Nao
+This connected us to Nao!!!
 
-Once connected, we used the nano test editor and the instructions present in the labsheet to enter a text to speech command, and saved it as a python file (.py).
+Once connected, we used the nano text editor and the instructions in the labsheet to enter a text to speech command, and saved it as a python file (.py).
 
-Then in the chapman directory we called the saved python file ($ python filename.py) which executed the file and made nao speak the text provided in the nano text editor.
+Then in the chapman directory we called the saved python file ($ python filename.py) which executed the file and made nao speak the text provided in the nano text editor("stop hacking me").
 
 
