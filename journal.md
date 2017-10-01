@@ -1,12 +1,6 @@
 
-# **Lab1**
+# **___________________________________________Lab1___________________________________________**
 
-
-Links used for Lab1 research:
-
- [github cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)  
- [edutechional youtube](https://www.youtube.com/watch?v=_gknWWa2OF0)  
- [dev notes](http://dev-notes.eu/2016/01/images-in-kramdown-jekyll/)  
 
 # *Part I*
 ## *Step 1 – Write your first Markdown document*
@@ -242,3 +236,10 @@ Once connected, we used the nano text editor and the instructions in the labshee
 Then in the chapman directory we called the saved python file ($ python filename.py) which executed the file and made nao speak the text provided in the nano text editor("stop hacking me").
 
 [![](https://github.com/Faisal-f-rehman/nao/blob/master/nao/Nao%20youtube.png?raw=true)](https://youtu.be/QXcox3Utphs "Stop Hacking Me")
+
+
+References Lab 1:
+
+ [github cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)  
+ [edutechional youtube](https://www.youtube.com/watch?v=_gknWWa2OF0)  
+ [dev notes](http://dev-notes.eu/2016/01/images-in-kramdown-jekyll/)  
