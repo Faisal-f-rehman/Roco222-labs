@@ -222,7 +222,7 @@ Connecting to Nao was a very exciting task full of trial and error, full of frus
 
 We tried to follow the instructions online to connect to Nao but understandably it didnt point out that Nao could be connected to a local network only, which was pointed out to us by Dr Lemaignan. I also learnt that pings are very small packages sent and received to and from the selected IP address, which made sense, since smaller packages would be faster to transfer.
 
-Then we pinged the name chapman (Nao Robot): <img src="https://github.com/Faisal-f-rehman/nao/blob/master/nao/Nao%201.jpg?raw=true" alt="Nao" height="80" width="80" >
+Then we pinged the name chapman (Nao Robot):![](https://github.com/Faisal-f-rehman/nao/blob/master/nao/Nao%201.jpg?raw=true | width=100)
 ```
 $ ping chapman.local
 
@@ -240,5 +240,7 @@ This connected us to Nao!!!
 Once connected, we used the nano text editor and the instructions in the labsheet to enter a text to speech command, and saved it as a python file (.py).
 
 Then in the chapman directory we called the saved python file ($ python filename.py) which executed the file and made nao speak the text provided in the nano text editor("stop hacking me").
+
+<img src="https://github.com/Faisal-f-rehman/nao/blob/master/nao/Nao%201.jpg?raw=true" alt="Nao" height="200" width="150" >
 
 
