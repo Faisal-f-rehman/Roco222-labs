@@ -100,7 +100,7 @@ This command creates a file called cpuinfo in the proc directory. cpuinfo contai
 
 **Create a roco222 subdirectory in your home directory, then one subdirectory for each of you, and finally a sub-subdirectory named lab-journal. Make a copy of your lab journal in each of these directories.**
 
-```python
+```
 $ cd $HOME
 $ mkdir roco222
 $ cd $HOME/roco222
@@ -124,7 +124,7 @@ $ cp journal.md $HOME/roco222/Faisal/lab-journal
 
 **That’s it: a git repository is a regular directory, with one special item: an hidden .git/ directory that stores all the objects git manipulates (mainly binary blobs representing files or parts of files).**
 
-```python
+```
 $ cd $HOME/roco222/Faisal/lab-journal
 $ git init
 ```
@@ -144,7 +144,7 @@ $ git init
 
 **The commit summary must be concise yet must describe accurately the content of the change. For instance, “Created journal – initial report on Markdown syntax”.**
 
-```python
+```
 $ git add journal.md
 $ git commit -m "first commit"
 ```
@@ -157,7 +157,7 @@ $ git commit -m "first commit"
 
 Using git we can record changes to our files over time so that we can recall specific versions later.
 
-```python
+```
 $ git status  
 On branch master
 nothing to commit, working directory clean
@@ -187,7 +187,7 @@ $ git remote add origin https://github.com/<account>/<repo>.git # add a remote c
 $ git push -u origin # push all your local commits to GitHub
 ```
 
-```python
+```
 $ cd $HOME/roco222/Faisal/lab-journal
 $ git remote add origin https://github.com/Faisal-f-rehman/journal.md/tree/master)
 $ git push -u origin master
