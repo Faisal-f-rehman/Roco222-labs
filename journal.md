@@ -241,6 +241,4 @@ Once connected, we used the nano text editor and the instructions in the labshee
 
 Then in the chapman directory we called the saved python file ($ python filename.py) which executed the file and made nao speak the text provided in the nano text editor("stop hacking me").
 
-
-
-
+[![](https://github.com/Faisal-f-rehman/nao/blob/master/nao/nao.jpg?raw=true)](https://youtu.be/QXcox3Utphs "Stop Hacking Me")
