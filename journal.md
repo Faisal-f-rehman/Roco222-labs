@@ -235,9 +235,7 @@ Connecting to Nao was a very exciting task full of trial and error, full of frus
 
 We tried to follow the instructions online to connect to Nao but understandably it didnt point out that Nao could be connected to a local network only, which was pointed out to us by Dr Lemaignan. I also learnt that pings are very small packages sent and received to and from the selected IP address, which made sense, since smaller packages would be faster to transfer.
 
-Then we pinged the name chapman (Nao Robot):
-
-<div style="float: right;"><IMG SRC="https://github.com/Faisal-f-rehman/nao/blob/master/nao/nao.jpg?raw=true" height="30%" width="30%">
+<div style="float: right; clear: left;"><IMG src="https://github.com/Faisal-f-rehman/nao/blob/master/nao/nao.jpg?raw=true"height="30%" width="30%">Then we pinged the name chapman (Nao Robot):</div>
 
 ```
 $ ping chapman.local
