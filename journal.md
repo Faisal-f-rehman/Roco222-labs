@@ -312,6 +312,16 @@ When the current is passed through the armature coil between the two poles, the 
 If we hold the wire like we did in Ampere's rule with the thumb pointing in the direction of current but this time unfold our fingers, we will have thumb pointing in the direction of current and if we move our fingers pointing in the direction of flux density (B) of poles, the magnetic force would be pointing away from the palm perpandicular to both flux density and current.(Snap from lecture notes and an image sourced from [Hyperphysics](http://hyperphysics.phy-astr.gsu.edu/hbase/magnetic/motdc.html) below)  
 <img src="http://hyperphysics.phy-astr.gsu.edu/hbase/magnetic/imgmag/dcmop.gif" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Mag%20force%20hand%20rule.png?raw=true" height="50%" width="50%"/>
  
+## **Part I**  
+# **Build a brushed DC electrical motor**
+
+### Step 1 – Build a commutator
+
+We built the commutator with a self-adhesive copper tape and a cork. We taped two strips of the copper around one end of the cork leaving a gap between the two to prevent short circuit.
+
+### Step 2 – Add support shaft
+
+For the support shaft we pressed two nail like metal pieces in the cork
 
 
 
