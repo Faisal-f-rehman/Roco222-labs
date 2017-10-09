@@ -249,7 +249,8 @@ Then we used the IP address to connect via ssh:
 
 ```
 $ ssh nao@192.168.0.184
-```</div>
+```
+</div>
 
 
 
