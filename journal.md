@@ -298,7 +298,9 @@ The **commutator** is made of even metal strips (two strips in this case), stuck
 
 There are two **brushes** connected to a dc power supply, one to the positive terminal and one to the negative terminal. These brushes are fixed on the housing/frame of the motor and rub against the commutator as the commutator rotates, switching the currunt flow in the armature.   
 
-**_How it works_** 
+**_How it works_**
+
+
 <img src="https://cdn4.explainthatstuff.com/how-electric-motor-works-animation.gif"/>|Source  [www.explainthatstuff.com](http://www.explainthatstuff.com/electricmotors.html)
 
 Taking a very basic DC motor as an example with a single wire/coil as the armature and only two poles, makes it easier to understand the theory. 
@@ -308,7 +310,7 @@ A DC brushed motor is all about electromagnetism. When the current passes throug
 When the current is passed through the armature coil between the two poles, the magnetic fields from the coil interacts with the magnetic field running from north to south poles, this generates a magnetic force (F=ILB, F, I and B are vector quantities and L is the length of the wire), on the wire/coil, this magnetic force creates torque (T=F*L) which rotates the motor. 
 
 If we hold the wire like we did in Ampere's rule with the thumb pointing in the direction of current but this time unfold our fingers, we will have thumb pointing in the direction of current and if we move our fingers pointing in the direction of flux density (B) of poles, the magnetic force would be pointing away from the palm perpandicular to both flux density and current.(Snap from lecture notes and an image sourced from [Hyperphysics](http://hyperphysics.phy-astr.gsu.edu/hbase/magnetic/motdc.html) below)  
-<img src="http://hyperphysics.phy-astr.gsu.edu/hbase/magnetic/motdc.html" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Mag%20force%20hand%20rule.png?raw=true" height="50%" width="50%"/>
+<img src="http://hyperphysics.phy-astr.gsu.edu/hbase/magnetic/imgmag/dcmop.gif" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Mag%20force%20hand%20rule.png?raw=true" height="50%" width="50%"/>
  
 
 
