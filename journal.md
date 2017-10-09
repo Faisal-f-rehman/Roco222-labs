@@ -284,7 +284,7 @@ In this lab we are going to build a brushed DC motor with parts that are fairly 
 8) DC power supply or a battery
 
 
-_Some theory first_
+#### _Some theory first_
 
 A very basic DC brushed motor consists of following:
 
@@ -297,6 +297,10 @@ An **armature** made up of copper wire wrapped around the **core**. Where the su
 The **commutator** is made of even metal strips (two strips in this case), stuck on a circle on the same shaft as the core and therefore rotates with the armature and the core. Each metal strip is connected to the copper wire as mentioned above and as it rotates the brushes rub on these strips to conduct electricity through the strips and the coils.
 
 There are two **brushes** connected to a dc power supply, one to the positive terminal and one to the negative terminal. These brushes are fixed on the housing/frame of the motor and rub against the commutator as the commutator rotates, switching the currunt flow in the armature.   
+
+#### _How it works_
+
+<img src="https://cdn4.explainthatstuff.com/how-electric-motor-works-animation.gif"/>
 
 
 
