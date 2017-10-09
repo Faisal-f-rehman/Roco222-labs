@@ -134,7 +134,8 @@ $ cp journal.md $HOME/roco222/Faisal/lab-journal
 
 **git is a widely-used tool to manage code and other text-based documents. You will use it to manage your lab journal. GitHub is a (proprietary) online platform to share git repositories. While not required to use git, we will make use of GitHub today. If you do not already have an account, create one from the website: https://github.com.**
 
-<img src="https://github.com/Faisal-f-rehman/nao/blob/master/nao/github.png?raw=true" alt="My Github" height="50%" width="50%">
+<div style="text-align: center;"><IMG SRC="https://github.com/Faisal-f-rehman/nao/blob/master/nao/github.png?raw=true" ALT="My Github" height="50%" width="50%"></div>
+
 
 
 ## *Step 4 – Your first git repository*
