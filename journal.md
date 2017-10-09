@@ -134,6 +134,9 @@ $ cp journal.md $HOME/roco222/Faisal/lab-journal
 
 **git is a widely-used tool to manage code and other text-based documents. You will use it to manage your lab journal. GitHub is a (proprietary) online platform to share git repositories. While not required to use git, we will make use of GitHub today. If you do not already have an account, create one from the website: https://github.com.**
 
+[![My Github](https://github.com/Faisal-f-rehman/nao/blob/master/nao/github.png?raw=true)](https://github.com/Faisal-f-rehman)
+
+
 <div style="text-align: center;"><IMG SRC="https://github.com/Faisal-f-rehman/nao/blob/master/nao/github.png?raw=true" ALT="My Github" height="50%" width="50%"></div>
 
 
@@ -255,7 +258,7 @@ Once connected, we used the nano text editor and the instructions in the labshee
 
 Then in the chapman directory we called the saved python file ($ python filename.py) which executed the file and made nao speak the text provided in the nano text editor("stop hacking me").
 
-[![](https://github.com/Faisal-f-rehman/nao/blob/master/nao/Nao%20youtube.png?raw=true)](https://youtu.be/ynQ2N2L5ZKI")
+[![](https://github.com/Faisal-f-rehman/nao/blob/master/nao/Nao%20youtube.png?raw=true)]("https://www.youtube.com/watch?v=ynQ2N2L5ZKI")
 
 
 References Lab 1:
