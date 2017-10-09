@@ -1,5 +1,24 @@
+#**ROCO222 LAB-JOURNAL**
 
-# **___________________________________________Lab1___________________________________________**
+##**FAISAL FAZAL-UR-REHMAN, Student ID** 
+
+
+
+##**Index**
+
+Please note this is a complete Lab journal with all labs as a scroll view, however you can click the links below to jump to a particular Lab book  
+
+[Lab1 Software engineering for roboticists]()
+
+[Lab2 Build a DC motor]()
+
+
+
+
+
+
+
+# **Lab1 Software engineering for roboticists**
 
 
 # *Part I*
@@ -65,7 +84,7 @@ For a line break with space between two lines press enter twice at the end of th
 
 
 **$ ls**  
-provides a list directories present in the current directory
+provides a list of files present in the current directory
 
 **$ cd /tmp**  
 cd = change directory, in this example it changes directory to tmp
@@ -115,7 +134,7 @@ $ cp journal.md $HOME/roco222/Faisal/lab-journal
 
 **git is a widely-used tool to manage code and other text-based documents. You will use it to manage your lab journal. GitHub is a (proprietary) online platform to share git repositories. While not required to use git, we will make use of GitHub today. If you do not already have an account, create one from the website: https://github.com.**
 
-[my github repository](https://github.com/Faisal-f-rehman/journal.md/tree/master)
+<img src="nao/nao/github.png" alt="My Github" height="30%" width="30%">
 
 
 ## *Step 4 – Your first git repository*
@@ -235,7 +254,7 @@ Once connected, we used the nano text editor and the instructions in the labshee
 
 Then in the chapman directory we called the saved python file ($ python filename.py) which executed the file and made nao speak the text provided in the nano text editor("stop hacking me").
 
-[![](https://github.com/Faisal-f-rehman/nao/blob/master/nao/Nao%20youtube.png?raw=true)](https://youtu.be/QXcox3Utphs "Stop Hacking Me")
+[![](https://github.com/Faisal-f-rehman/nao/blob/master/nao/Nao%20youtube.png?raw=true)](https://youtu.be/ynQ2N2L5ZKI")
 
 
 References Lab 1:
@@ -243,3 +262,25 @@ References Lab 1:
  [github cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)  
  [edutechional youtube](https://www.youtube.com/watch?v=_gknWWa2OF0)  
  [dev notes](http://dev-notes.eu/2016/01/images-in-kramdown-jekyll/)  
+
+
+# **Lab2 Build a DC motor**
+
+**What is it about?**
+	Let’s build a DC motor from scratch! You have 2 weeks to: (1) build a first version, (2) iterate 		and optimise the design, (3) build a better version of your motor.
+
+**Aims**
+	At the end of the practical, you should:
+	• know the key parts of a DC motor
+	• have gained an experimental intuition of the physics behind DC motors
+	• have a working and reasonably efficient DC motor that we will re-use during the coming 		  practicals
+
+**Specific Challenges**
+	• A certain sense of meticulousness might be needed for an optimal result
+	• You’ll get your hands dirty
+	• (and you’ll need to use a soldering iron)
+
+
+
+
+
