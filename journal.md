@@ -284,7 +284,7 @@ In this lab we are going to build a brushed DC motor with parts that are fairly 
 8) DC power supply or a battery
 
 
-**_Some theory first_**
+### **_Some theory first_**
 
 A very basic DC brushed motor consists of following:
 
@@ -298,7 +298,7 @@ The **commutator** is made of even metal strips (two strips in this case), stuck
 
 There are two **brushes** connected to a dc power supply, one to the positive terminal and one to the negative terminal. These brushes are fixed on the housing/frame of the motor and rub against the commutator as the commutator rotates, switching the currunt flow in the armature.   
 
-**_How it works_**
+### **_How it works_**
 
 
 <img src="https://cdn4.explainthatstuff.com/how-electric-motor-works-animation.gif"/>|Source  [www.explainthatstuff.com](http://www.explainthatstuff.com/electricmotors.html)
