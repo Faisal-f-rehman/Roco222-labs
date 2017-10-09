@@ -137,10 +137,6 @@ $ cp journal.md $HOME/roco222/Faisal/lab-journal
 [![My Github](https://github.com/Faisal-f-rehman/nao/blob/master/nao/github.png?raw=true)](https://github.com/Faisal-f-rehman)
 
 
-<div style="text-align: center;"><IMG SRC="https://github.com/Faisal-f-rehman/nao/blob/master/nao/github.png?raw=true" ALT="My Github" height="50%" width="50%"></div>
-
-
-
 ## *Step 4 – Your first git repository*
 
 **Initialise the each of your git repositories by navigating to each of the directories you created. Type git init in there. The name of the directory is the name of your repository.**
@@ -239,7 +235,8 @@ Connecting to Nao was a very exciting task full of trial and error, full of frus
 
 We tried to follow the instructions online to connect to Nao but understandably it didnt point out that Nao could be connected to a local network only, which was pointed out to us by Dr Lemaignan. I also learnt that pings are very small packages sent and received to and from the selected IP address, which made sense, since smaller packages would be faster to transfer.
 
-Then we pinged the name chapman (Nao Robot):<img src="https://github.com/Faisal-f-rehman/nao/blob/master/nao/nao.jpg?raw=true" alt="Nao" height="30%" width="30%">
+Then we pinged the name chapman (Nao Robot):
+<img src="https://github.com/Faisal-f-rehman/nao/blob/master/nao/nao.jpg?raw=true"
 ```
 $ ping chapman.local
 
@@ -251,6 +248,8 @@ Then we used the IP address to connect via ssh:
 ```
 $ ssh nao@192.168.0.184
 ```
+alt="Nao" height="30%" width="30%">
+
 
 This connected us to Nao!!!
 
@@ -270,22 +269,22 @@ References Lab 1:
 
 # **Lab2 Build a DC motor**
 
-**What is it about?**
+**What is it about?**  
 	Let’s build a DC motor from scratch! You have 2 weeks to: (1) build a first version, (2) iterate 		and optimise the design, (3) build a better version of your motor.
 
-**Aims**
+**Aims**  
 	At the end of the practical, you should:
 	• know the key parts of a DC motor
 	• have gained an experimental intuition of the physics behind DC motors
 	• have a working and reasonably efficient DC motor that we will re-use during the coming 		  practicals
 
-**Specific Challenges**
+**Specific Challenges**  
 	• A certain sense of meticulousness might be needed for an optimal result
 	• You’ll get your hands dirty
 	• (and you’ll need to use a soldering iron)
 
 
-In this lab we are to build a brushed DC motor with parts that are fairly easy to get and cheap to buy. The parts are as follows:
+In this lab we are going to build a brushed DC motor with parts that are fairly easy to get and cheap to buy. The parts are as follows:
 
 1) A cork, possibly from a champagne bottle :D
 2) Approximately 10m of copper wire
