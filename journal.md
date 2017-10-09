@@ -1,10 +1,10 @@
-#**ROCO222 LAB-JOURNAL**
+# **ROCO222 LAB-JOURNAL**
 
-##**FAISAL FAZAL-UR-REHMAN, Student ID** 
+## **FAISAL FAZAL-UR-REHMAN, Student ID** 
 
 
 
-##**Index**
+## **Index**
 
 Please note this is a complete Lab journal with all labs as a scroll view, however you can click the links below to jump to a particular Lab book  
 
@@ -134,7 +134,7 @@ $ cp journal.md $HOME/roco222/Faisal/lab-journal
 
 **git is a widely-used tool to manage code and other text-based documents. You will use it to manage your lab journal. GitHub is a (proprietary) online platform to share git repositories. While not required to use git, we will make use of GitHub today. If you do not already have an account, create one from the website: https://github.com.**
 
-<img src="nao/nao/github.png" alt="My Github" height="30%" width="30%">
+<img src="https://github.com/Faisal-f-rehman/nao/blob/master/nao/github.png?raw=true" alt="My Github" height="50%" width="50%">
 
 
 ## *Step 4 – Your first git repository*
@@ -279,6 +279,19 @@ References Lab 1:
 	• A certain sense of meticulousness might be needed for an optimal result
 	• You’ll get your hands dirty
 	• (and you’ll need to use a soldering iron)
+
+
+In this lab we are to build a brushed DC motor with parts that are fairly easy to get and cheap to buy. The parts are as follows:
+
+1) A cork, possibly from a champagne bottle :D
+2) Approximately 10m of copper wire
+3) 4 large paperclips
+4) 4 screws with washers
+5) 4 Rare Earth (Neodymium Magnets)
+6) 2 thin but long (about 3.5cm long) nails
+7) Approximately 0.5cm thick and about 10-12cm square wooden base
+8) DC power supply or a battery
+
 
 
 
