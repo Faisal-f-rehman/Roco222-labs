@@ -270,6 +270,7 @@ References Lab 1:
 	• You’ll get your hands dirty
 	• (and you’ll need to use a soldering iron)
 
+# 
 
 In this lab we are going to build a brushed DC motor with parts that are fairly easy to get and cheap to buy. The parts are as follows:
 
@@ -282,6 +283,23 @@ In this lab we are going to build a brushed DC motor with parts that are fairly 
 7) Approximately 0.5cm thick and about 10-12cm square wooden base
 8) DC power supply or a battery
 
+
+_Some theory first_
+
+A very basic DC brushed motor consists of following:
+
+Two **Poles** facing each other, one is North and the other is south i.e  attracting each other and due to this a magnetic field is generated between the two poles in a straight line, from North to South. 
+
+An **armature** made up of copper wire wrapped around the **core**. Where the substance that the core is made of and the number of copper wire turns effects the magnetic flux density (B=uin => B=uiN/l, see the lecture snippets below). Each of the two ends of the copper wire are attached to two metal strips known as the commutator.   
+<img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Screenshot%20from%202017-10-09%2019-59-10.png?raw=true" style="float: left; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Screenshot%20from%202017-10-09%2019-59-45.png?raw=true" style="float: left; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"><p style="clear: both;">
+
+
+
+<img src="" height="50%" width="50%">
+
+The **commutator** is made of even metal strips (two strips in this case), stuck on a circle on the same shaft as the core and therefore rotates with the armature and the core. Each metal strip is connected to the copper wire as mentioned above and as it rotates the brushes rub on these strips to conduct electricity through the strips and the coils.
+
+There are two **brushes** connected to a dc power supply, one to the positive terminal and one to the negative terminal. These brushes are fixed on the housing/frame of the motor and rub against the commutator as the commutator rotates, switching the currunt flow in the armature.   
 
 
 
