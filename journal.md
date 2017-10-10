@@ -253,6 +253,7 @@ References Lab 1:
  [edutechional youtube](https://www.youtube.com/watch?v=_gknWWa2OF0)  
  [dev notes](http://dev-notes.eu/2016/01/images-in-kramdown-jekyll/)  
 
+## -----------------------------------------------------------------------------------------------
 
 # **Lab2 Build a DC motor**
 
