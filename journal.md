@@ -10,7 +10,7 @@ Please note this is a complete Lab journal with all labs as a scroll view, howev
 
 [Lab1 Software engineering for roboticists]()
 
-[Lab2 Build a DC motor]()
+[Lab2 Build a DC motor](journal.md/lab2 dc motor.md)
 
 
 
