@@ -317,12 +317,43 @@ If we hold the wire like we did in Ampere's rule with the thumb pointing in the 
 
 ### Step 1 – Build a commutator
 
-We built the commutator with a self-adhesive copper tape and a cork. We taped two strips of the copper around one end of the cork leaving a gap between the two to prevent short circuit.
+We built the commutator with a self-adhesive copper tape and a cork. We taped two strips of the copper around one end of the cork leaving a gap between the strips, to prevent short circuit.
 
 ### Step 2 – Add support shaft
 
-For the support shaft we pressed two nail like metal pieces in the cork
+For the support shaft we pressed two nail like metal pieces in the cork that would allow the cork to rest on them while they rotate.
+
+### Step 3 – Wind the armature coil
+
+We wound the 10m armature coil around the cork and through the gaps between the commutator strips while counting the number of turns, unfortunately we could only get 58 turns out of 60 required from the length of the wire. This is when we measured the resistance of the coil, which came to 3.6ohms (very tiny amount of resistance),so that we could calculate the voltage required, as the max current allowed was 2A according to the labsheet.
+
+### Step 4 – Build the shaft support and magnet brackets
+
+The shaft and magnet supports were fairly easy to make with the paper clips, however aligning them properly was a little trickier as once the magnets went on them the clips supporting the shaft started to move from side to side.
+
+### Step 5 – Build the baseplate
+
+We screwed the paper clips into the base plate using the washer and screws provided
 
 
+## Part II
+# Test the motor
+
+First we calculated the voltage required. Since the "max" current was 2A we decided to start with half the amount of current allowed ie 1A. V = IR = 1A * 3.6ohms = 3.6V
+
+Then we made the brushes by sticking some copper tape at the end of the wires coming from the power supply.
+
+Then we switched the power on and held the brushes on the commutator and gave the shaft a push start, unfortunately we couldnt get any more than a turn or two out of the motor. This could be due a number of reasons:
+
+After some research online and looking at the equations in the lecture notes I found out that greater number of coil turns produces higher torque but lower speeds (N in rpm, rotations per minute) which means that there is a trade off between torque and speed (torque is inversely proportional to speed T=1/N)and this meant the problem we were facing was could be to do with torque and therefore the number of coil turns being under 60, Or this could also be down to the fact that keeping a steady connection between the brushes and the commutator was very difficult.
+
+# Calculating theoratical values
+
+Since we know the resistance (R) the supply voltage (V) and the current (I), from the power equations in the lecture notes we can use simultaneous equations to evaluate torque and rotational speed of the motor:
+# ------------------------------------ NEED TO PUT IN MATHS DONE ON PAPER------------------------------
+
+## Part III
+# A better DC motor
+**You are now required to build a brushed DC motor with a minimum of two coils. You should also build a com-mutator and brush mechanism so that the motor self starts**
 
 
