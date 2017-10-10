@@ -8,9 +8,9 @@
 
 Please note this is a complete Lab journal with all labs as a scroll view, however you can click the links below to jump to a particular Lab book  
 
-[Lab1 Software engineering for roboticists]()
+[Lab1 Software engineering for roboticists](https://github.com/Faisal-f-rehman/journal.md/blob/master/journal.md)
 
-[Lab2 Build a DC motor](journal.md/lab2 dc motor.md)
+[Lab2 Build a DC motor](https://github.com/Faisal-f-rehman/journal.md/blob/master/lab2%20dc%20motor.md)
 
 
 
