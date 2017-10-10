@@ -350,7 +350,7 @@ After some research online and looking at the equations in the lecture notes I f
 
 # Calculating theoratical values
 
-Since we know the resistance (R) the supply voltage (V) and the current (I), from the power equations in the lecture notes we can use simultaneous equations to evaluate torque and rotational speed of the motor:
+Once we have measured rotational speed and we know the resistance (R) the supply voltage (V) and the current (I), from the power equations in the lecture notes we can evaluate torque of the motor:
 # ------------------------------------ NEED TO PUT IN MATHS DONE ON PAPER------------------------------
 
 ## Part III
