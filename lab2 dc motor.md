@@ -3,7 +3,7 @@
 
 [Lab1 Software engineering for roboticists](https://github.com/Faisal-f-rehman/journal.md/blob/master/journal.md)
 
-[Lab2 Build a DC motor](https://github.com/Faisal-f-rehman/journal.md/blob/master/lab2%20dc%20motor.md)
+
 
 
 # **Lab2 Build a DC motor**
@@ -99,12 +99,15 @@ Then we switched the power on and held the brushes on the commutator and gave th
 
 After some research online and looking at the equations in the lecture notes I found out that greater number of coil turns produces higher torque but lower speeds (N in rpm, rotations per minute) which means that there is a trade off between torque and speed (torque is inversely proportional to speed T=1/N)and this meant the problem we were facing was could be to do with torque and therefore the number of coil turns being under 60, Or this could also be down to the fact that keeping a steady connection between the brushes and the commutator was very difficult.
 
-# Calculating theoratical values
 
-Since we know the resistance (R) the supply voltage (V) and the current (I), from the power equations in the lecture notes we can use simultaneous equations to evaluate torque and rotational speed of the motor:
-# ------------------------------------ NEED TO PUT IN MATHS DONE ON PAPER------------------------------
+
 
 ## Part III
 # A better DC motor
 **You are now required to build a brushed DC motor with a minimum of two coils. You should also build a com-mutator and brush mechanism so that the motor self starts**
 
+Considerations taken for the improved motor design:
+
+#-----Notes on paper
+
+ 
