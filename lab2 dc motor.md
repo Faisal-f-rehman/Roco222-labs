@@ -71,6 +71,8 @@ If we hold the wire like we did in Ampere's rule with the thumb pointing in the 
 
 We built the commutator with a self-adhesive copper tape and a cork. We taped two strips of the copper around one end of the cork leaving a gap between the strips, to prevent short circuit.
 
+![Commutator](https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/0_Stage_Motor_Pic3.JPG?raw=true)
+
 ### Step 2 – Add support shaft
 
 For the support shaft we pressed two nail like metal pieces in the cork that would allow the cork to rest on them while they rotate.
@@ -86,6 +88,7 @@ The shaft and magnet supports were fairly easy to make with the paper clips, how
 ### Step 5 – Build the baseplate
 
 We screwed the paper clips into the base plate using the washer and screws provided
+
 
 
 ## Part II
