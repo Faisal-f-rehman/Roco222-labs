@@ -71,7 +71,7 @@ If we hold the wire like we did in Ampere's rule with the thumb pointing in the 
 
 We built the commutator with a self-adhesive copper tape and a cork. We taped two strips of the copper around one end of the cork leaving a gap between the strips, to prevent short circuit.
 
-![Commutator](https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/0_Stage_Motor_Pic3.JPG?raw=true)
+![Commutator](https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/0_Stage_CommutatorandArmature.JPG?raw=true)
 
 ### Step 2 – Add support shaft
 
@@ -81,6 +81,8 @@ For the support shaft we pressed two nail like metal pieces in the cork that wou
 
 We wound the 10m armature coil around the cork and through the gaps between the commutator strips while counting the number of turns, unfortunately we could only get 58 turns out of 60 required from the length of the wire. This is when we measured the resistance of the coil, which came to 3.6ohms (very tiny amount of resistance),so that we could calculate the voltage required, as the max current allowed was 2A according to the labsheet.
 
+![Ready armature with shaft and measured resistance](https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/3.6Ohm_Measurement_0_stage_motor.JPG?raw=true)
+
 ### Step 4 – Build the shaft support and magnet brackets
 
 The shaft and magnet supports were fairly easy to make with the paper clips, however aligning them properly was a little trickier as once the magnets went on them the clips supporting the shaft started to move from side to side.
@@ -89,6 +91,7 @@ The shaft and magnet supports were fairly easy to make with the paper clips, how
 
 We screwed the paper clips into the base plate using the washer and screws provided
 
+![Fully assembled motor](https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/0_Stage_Motor_Pic3.JPG?raw=true)
 
 
 ## Part II
@@ -109,8 +112,54 @@ After some research online and looking at the equations in the lecture notes I f
 # A better DC motor
 **You are now required to build a brushed DC motor with a minimum of two coils. You should also build a com-mutator and brush mechanism so that the motor self starts**
 
-Considerations taken for the improved motor design:
+We ended up making 2 motors. We jumped straight into building our first motor without really thinking it through, we learnt a valuable lesson that one should properly understand the maths fully behind the concept first.
 
-#-----Notes on paper
+
+### Motor 1
+We checked if 1 pence copper coins were attracted to magnets and used them as the core between the coils, at this point we hadn't actually checked the relative permiability (ur, u=greek letter Mu), of copper, which is 1. This meant that the copper core did not help produce more magnetic flux(*B=u0.ur.i*), instead it made matters worse by cogging our motor. 
+
+Since we designed the first motor to have coil windings parallel to the shaft and not wrapped around the shaft, the issue with cogging was even worse. As this meant that each pole due to magnetic attraction of the material inside the coil windings (solinoid), would try to stop when facing the fixed magnets. Although we did take this into account and made a swirl design it still was not powerful enough to get around the cogging. (Motor 1 pictures below).
+
+We also made the diameter of the commutator too big, as this meant that the brushes would have to travel a larger distance to activate the next coil.
+
+![Solidworks design of the complete shaft, armature rotor and commutator](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%201%20shaft.PNG?raw=true)
+
+![3D printed commutator and armature rotor](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/3D%20print%20motors%20.jpg?raw=true)
+
+![Solidworks assembly of motor 1](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%201%20assembly.PNG?raw=true)
+
+![3D printed assembled motor 1](https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/First_Design_Assembled.JPG?raw=true)
+
+As you can see above, we decided to save some time and made a wooden frame instead of printing it. This is where Spencer's great wood working skills came in very handy.
+
+### Motor 2
+Since we had so many problems with the first motor we decided to start fresh and this time we studied the maths and the theory properly behind the DC brush motor.
+
+By this time lab 3 encoder was out, so we decided to incorporate a suitable holding for the IR LED and the phototransistor into our motor frame and shaft. 
+
+#### Considerations taken for the improved motor design:
+
+##### Formulas to consider
+![Flux Density, Force and Torque](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings/Page%201.jpeg?raw=true)
+![Torque and Power equation](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings/Page%202.jpeg?raw=true)
+
+##### Rough armature sketch and dimensions
+![Armatutre sketch ](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings/Page%202.jpeg?raw=true)
+
+##### Solidworks
+
+*Commutator and Armature*
+![Commutator and armature](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20Armature%20and%20commutator.PNG?raw=true)
+
+*Encoder disc shaft*
+![Encoder disc shaft](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20encoder.PNG?raw=true)
+
+*Motor 2 Frame*
+![Motor 2 Frame](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20frame.PNG?raw=true)
+
+*Motor 2 Assembly*
+![Motor 2 Assembly](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20Assembly.PNG?raw=true)
+
+
 
  
