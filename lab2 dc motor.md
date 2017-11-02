@@ -146,18 +146,25 @@ By this time lab 3 encoder was out, so we decided to incorporate a suitable hold
 ##### Rough armature sketch and dimensions
 ![Armatutre sketch ](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings/Page%202.jpeg?raw=true)
 
+
+##### Calculations
+We decided to start making an excel for the calculations of motors, as this could be very handy to refer back to later on. This also helps us to make graphs for analysis.
+
+![DC brushed motor excel](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings/Roco222%20excel%20snippet%201.PNG?raw=true)
+
+# 
 ##### Solidworks
 
-*Commutator and Armature*
+*Commutator and Armature*  
 ![Commutator and armature](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20Armature%20and%20commutator.PNG?raw=true)
 
-*Encoder disc shaft*
+*Encoder disc shaft*  
 ![Encoder disc shaft](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20encoder.PNG?raw=true)
 
-*Motor 2 Frame*
+*Motor 2 Frame*  
 ![Motor 2 Frame](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20frame.PNG?raw=true)
 
-*Motor 2 Assembly*
+*Motor 2 Assembly*  
 ![Motor 2 Assembly](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20Assembly.PNG?raw=true)
 
 

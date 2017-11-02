@@ -139,7 +139,7 @@ $ cp journal.md $HOME/roco222/Faisal/lab-journal
 
 **That’s it: a git repository is a regular directory, with one special item: an hidden .git/ directory that stores all the objects git manipulates (mainly binary blobs representing files or parts of files).**
 
-```
+```python
 $ cd $HOME/roco222/Faisal/lab-journal
 $ git init
 ```
