@@ -5,9 +5,9 @@
 
 ## **Index**
 
-[Lab1 Software engineering for roboticists](https://github.com/Faisal-f-rehman/journal.md/blob/master/journal.md)
+[Lab1 Software engineering for roboticists](https://github.com/Faisal-f-rehman/Roco222-labs/blob/master/lab1%20software%20engineering%20for%20roboticists.md)
 
-[Lab3 Incremental Encoder]()
+[Lab3 Incremental Encoder](https://github.com/Faisal-f-rehman/Roco222-labs/blob/master/lab3%20Incremental%20Encoder.md)
 
 
 # **Lab2 Build a DC motor**
