@@ -1,9 +1,13 @@
+# **ROCO222 LAB-JOURNAL**
+
+## **FAISAL FAZAL-UR-REHMAN, Student ID** 
+
 
 ## **Index**
 
 [Lab1 Software engineering for roboticists](https://github.com/Faisal-f-rehman/journal.md/blob/master/journal.md)
 
-
+[Lab3 Incremental Encoder]()
 
 
 # **Lab2 Build a DC motor**
