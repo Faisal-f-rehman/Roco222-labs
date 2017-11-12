@@ -174,9 +174,14 @@ We decided to start making an excel for the calculations of motors, as this coul
 		All parts before assembly				Complete and assembled 
 <img src="https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/3d_Print_Second_Design_all.JPG?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/2nd%20motor/2nd%20motor%20ready.jpg?raw=true" height="50%" width="50%"/>
 
-							Video clips of motor running
+						Video clips of motor running
+		Loose brushes
+[![](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/2nd%20motor/loose%20brushes%20youtube%20snap.png?raw=true)](https://www.youtube.com/watch?v=Coqi3rfe3As)
 
+		Fixed brushes
 [![](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/2nd%20motor/fixed%20brushes%20youtube%20snap.png?raw=true)](https://youtu.be/EVDvQrVak18)
+
+
 
 
 
