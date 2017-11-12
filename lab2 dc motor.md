@@ -171,7 +171,7 @@ We decided to start making an excel for the calculations of motors, as this coul
 # 
 #### 3D Printed Final Model
 		Commutator and Armature					Encoder disc shaft 
-<img src="https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/3d\_printing_second_design.JPG?raw=true" height="50%" width="50%"/><img src="https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/3D_Printed_Encoder.JPG?raw=true" height="50%" width="50%"/>
+<img src="https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/3d_printing_second_design.JPG?raw=true" height="50%" width="50%"/><img src="https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/3D_Printed_Encoder.JPG?raw=true" height="50%" width="50%"/>
 		All parts before assembly				Complete assembled 
 <img src="https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/3d_Print_Second_Design_all.JPG?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/2nd%20motor/2nd%20motor%20ready.jpg?raw=true" height="50%" width="50%"/>
 
