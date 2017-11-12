@@ -159,17 +159,21 @@ We decided to start making an excel for the calculations of motors, as this coul
 # 
 ##### Solidworks
 
+<img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20Armature%20and%20commutator.PNG?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20encoder.PNG?raw=true" height="50%" width="50%"/>
+
+<img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20frame.PNG?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20Assembly.PNG?raw=true" height="50%" width="50%"/>
+
 *Commutator and Armature*  
-![Commutator and armature](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20Armature%20and%20commutator.PNG?raw=true)
+![Commutator and armature]()
 
 *Encoder disc shaft*  
-![Encoder disc shaft](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20encoder.PNG?raw=true)
+![Encoder disc shaft]()
 
 *Motor 2 Frame*  
-![Motor 2 Frame](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20frame.PNG?raw=true)
+![Motor 2 Frame]()
 
 *Motor 2 Assembly*  
-![Motor 2 Assembly](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20Assembly.PNG?raw=true)
+![Motor 2 Assembly]()
 
 
 
