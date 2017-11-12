@@ -126,13 +126,11 @@ Since we designed the first motor to have coil windings parallel to the shaft an
 
 We also made the diameter of the commutator too big, as this meant that the brushes would have to travel a larger distance to activate the next coil.
 
-![Solidworks design of the complete shaft, armature rotor and commutator](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%201%20shaft.PNG?raw=true)
+		Solidworks, complete shaft, armature rotor and commutator	3D printed commutator and armature rotor 
+<img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%201%20shaft.PNG?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/3D%20print%20motors%20.jpg?raw=true" height="50%" width="50%"/>
+		Solidworks assembly of motor 1					3D printed assembled motor 1 
+<img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%201%20assembly.PNG?raw=true" height="50%" width="50%"/><img src="https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/First_Design_Assembled.JPG?raw=true" height="50%" width="50%"/>
 
-![3D printed commutator and armature rotor](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/3D%20print%20motors%20.jpg?raw=true)
-
-![Solidworks assembly of motor 1](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%201%20assembly.PNG?raw=true)
-
-![3D printed assembled motor 1](https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/First_Design_Assembled.JPG?raw=true)
 
 As you can see above, we decided to save some time and made a wooden frame instead of printing it. This is where Spencer's great wood working skills came in very handy.
 
@@ -152,7 +150,7 @@ By this time lab 3 encoder was out, so we decided to incorporate a suitable hold
 ![Armatutre sketch ](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings/Page%202.jpeg?raw=true)  
 
 As you can see from the sketches above we decided to wind the coil in almost a lap-winding formation wrapped 'around'the rotar/shaft. This meant that we could print a hollow rotar/core and slide a piece of material with high relative permiability, as this would increase the magnetic flux dramatically without introducing cogging.
-<img src="" height="50%" width="50%"/><img src="" height="50%" width="50%"/> 
+<img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/2nd%20motor/2nd%20motor%20steel%20core1.jpg?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/2nd%20motor/2nd%20motor%20steel%20core2.jpg?raw=true" height="50%" width="50%"/> 
 
 
 #### Calculations
@@ -172,10 +170,10 @@ We decided to start making an excel for the calculations of motors, as this coul
 #### 3D Printed Final Model
 		Commutator and Armature					Encoder disc shaft 
 <img src="https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/3d_printing_second_design.JPG?raw=true" height="50%" width="50%"/><img src="https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/3D_Printed_Encoder.JPG?raw=true" height="50%" width="50%"/>
-		All parts before assembly				Complete assembled 
-<img src="https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/3d_Print_Second_Design_all.JPG?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/2nd%20motor/2nd%20motor%20ready.jpg?raw=true" height="50%" width="50%"/>
+		All parts before assembly				Complete and assembled 
+<img src="https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/3d_Print_Second_Design_all.JPG?raw=true" height="40%" width="40%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/2nd%20motor/2nd%20motor%20ready.jpg?raw=true" height="40%" width="40%"/>
 
-					Video clips of motor running
+							Video clips of motor running
 
 [![](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/2nd%20motor/fixed%20brushes%20youtube%20snap.png?raw=true)](https://youtu.be/EVDvQrVak18)
 
