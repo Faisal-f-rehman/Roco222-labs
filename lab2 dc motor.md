@@ -182,12 +182,22 @@ We decided to start making an excel for the calculations of motors, as this coul
 [![](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/2nd%20motor/fixed%20brushes%20youtube%20snap.png?raw=true)](https://youtu.be/EVDvQrVak18)
 
 
+### Testing Motor 2
 
+We had a running motor which was fairly powerful. However the motor would only run for half a minute or so at varying speeds and although it would auto start sometimes, it would'nt auto start everytime. After a lot of painful hours of trial and error and head scratching we found the following reasons for this:
 
++	The shaft was not straight!!. The 3D printed part had a slight bend towards the commutator, which looked like a very little bend while holding it but once fitted into the frame, it created a huge hump for the motor to climb. This meant that when the motor was stationary it would always rest just before the hump. Which is why when we started the motor, sometimes the motor would climb the hump and start rotating but other times it just did not have enough torque and would keep trying to pass the hump but would not succeed. 
 
++ Even though we had friction less bearings installed on the motor, the shaft was kind of stiff (lot of friction). This was again due to the bend in the shaft, as this made the motor wobbly and it would touch the frame at points while rotating. This also made it very tricky to have fixed brushes as they need to be in constant contact with the commutator and although after a lot of trial and error and adjustments we made two different types of brushes which had some bounce/spring element to it so that it could follow the wobbling shaft as it rotated, it still had very high friction as it pressed towards the brushes while wobbling. We made one type of brushes by collecting some copper coil together and the second one from paper clips.
 
++ The friction and the wobbling of the shaft meant that there was always some kind of force acting against the motor's direction of torque. Since current is _proportional_ to torque this meant more and more current was required and such a high amount of current made the coils heat up very quickly and since torque is _inversely proportional_ to temprature the motor would stop rotating after half a minute or so.
 
+		Motor trying to climb the hump and succeeding eventually
+[![](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/2nd%20motor/Uneven%20shaft%20youtube%20snap.png?raw=true)](https://www.youtube.com/watch?v=ys8xREoQkec)
 
+# 
+
+At the end although our motors did not work very well and some did not work at all, it was perhaps more educational for us than it would have been if our motors worked straight away, since we had to dig into the theory behind it and do lots of research to find out what mistakes we were making. Due to all the issues with the motor we were unable to measure the characteristics of our motor physically, so we decided to take our theoratical measurements instead to plot the torque vs speed graph.
 
 
  
