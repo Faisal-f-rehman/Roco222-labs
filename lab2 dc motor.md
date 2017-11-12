@@ -119,7 +119,7 @@ After some research online and looking at the equations in the lecture notes I f
 We ended up making 2 motors. We jumped straight into building our first motor without really thinking it through, we learnt a valuable lesson that one should properly understand the maths fully behind the concept first.
 
 
-### Motor 1
+## Motor 1
 We checked if 1 pence copper coins were attracted to magnets and used them as the core between the coils, at this point we hadn't actually checked the relative permiability (ur, u=greek letter Mu), of copper, which is 1. This meant that the copper core did not help produce more magnetic flux(*B=u0.ur.i*), instead it made matters worse by cogging our motor. 
 
 Since we designed the first motor to have coil windings parallel to the shaft and not wrapped around the shaft, the issue with cogging was even worse. As this meant that each pole due to magnetic attraction of the material inside the coil windings (solinoid), would try to stop when facing the fixed magnets. Although we did take this into account and made a swirl design it still was not powerful enough to get around the cogging. (Motor 1 pictures below).
@@ -136,35 +136,52 @@ We also made the diameter of the commutator too big, as this meant that the brus
 
 As you can see above, we decided to save some time and made a wooden frame instead of printing it. This is where Spencer's great wood working skills came in very handy.
 
-### Motor 2
+## Motor 2
 Since we had so many problems with the first motor we decided to start fresh and this time we studied the maths and the theory properly behind the DC brush motor.
+
 
 By this time lab 3 encoder was out, so we decided to incorporate a suitable holding for the IR LED and the phototransistor into our motor frame and shaft. 
 
-#### Considerations taken for the improved motor design:
+### Considerations taken for the improved motor design:
 
-##### Formulas to consider
+#### Formulas to consider
 ![Flux Density, Force and Torque](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings/Page%201.jpeg?raw=true)
 ![Torque and Power equation](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings/Page%202.jpeg?raw=true)
 
-##### Rough armature sketch and dimensions
-![Armatutre sketch ](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings/Page%202.jpeg?raw=true)
+#### Rough armature sketch and dimensions
+![Armatutre sketch ](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings/Page%202.jpeg?raw=true)  
+
+As you can see from the sketches above we decided to wind the coil in almost a lap-winding formation wrapped 'around'the rotar/shaft. This meant that we could print a hollow rotar/core and slide a piece of material with high relative permiability, as this would increase the magnetic flux dramatically without introducing cogging.
+<img src="" height="50%" width="50%"/><img src="" height="50%" width="50%"/> 
 
 
-##### Calculations
+#### Calculations
 We decided to start making an excel for the calculations of motors, as this could be very handy to refer back to later on. This also helps us to make graphs for analysis.
 
 ![DC brushed motor excel](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings/Roco222%20excel%20snippet%201.PNG?raw=true)
 
 # 
-##### Solidworks
-		*Commutator and Armature*				*Encoder disc shaft* 
+#### Solidworks
+		Commutator and Armature					Encoder disc shaft 
 <img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20Armature%20and%20commutator.PNG?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20encoder.PNG?raw=true" height="50%" width="50%"/>
 
-		*Motor 2 Frame*						*Motor 2 Assembly*
+		Motor 2 Frame						Motor 2 Assembly
 <img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20frame.PNG?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20Assembly.PNG?raw=true" height="50%" width="50%"/>
 
-  
+# 
+#### 3D Printed Final Model
+		Commutator and Armature					Encoder disc shaft 
+<img src="https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/3d\_printing_second_design.JPG?raw=true" height="50%" width="50%"/><img src="https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/3D_Printed_Encoder.JPG?raw=true" height="50%" width="50%"/>
+		All parts before assembly				Complete assembled 
+<img src="https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/3d_Print_Second_Design_all.JPG?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/2nd%20motor/2nd%20motor%20ready.jpg?raw=true" height="50%" width="50%"/>
+
+					Video clips of motor running
+
+[![](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/2nd%20motor/fixed%20brushes%20youtube%20snap.png?raw=true)](https://youtu.be/EVDvQrVak18)
+
+
+
+
 
 
 
