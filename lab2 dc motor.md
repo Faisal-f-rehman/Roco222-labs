@@ -158,22 +158,14 @@ We decided to start making an excel for the calculations of motors, as this coul
 
 # 
 ##### Solidworks
-
+		*Commutator and Armature*				*Encoder disc shaft* 
 <img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20Armature%20and%20commutator.PNG?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20encoder.PNG?raw=true" height="50%" width="50%"/>
 
+		*Motor 2 Frame*						*Motor 2 Assembly*
 <img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20frame.PNG?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20Assembly.PNG?raw=true" height="50%" width="50%"/>
 
-*Commutator and Armature*  
-![Commutator and armature]()
+  
 
-*Encoder disc shaft*  
-![Encoder disc shaft]()
-
-*Motor 2 Frame*  
-![Motor 2 Frame]()
-
-*Motor 2 Assembly*  
-![Motor 2 Assembly]()
 
 
 
