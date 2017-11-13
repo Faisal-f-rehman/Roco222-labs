@@ -198,9 +198,11 @@ We had a running motor which was fairly powerful. However the motor would only r
 
 # 
 
-At the end although our motors did not work very well and some did not work at all, it was perhaps more educational for us thanm it would have been if our motors worked straight away, since we had to dig into the theory behind it and do lots of research to find out what mistakes we were making. Due to all the issues with the motor we were unable to measure the characteristics of our motor physically, so we decided to take our theoratical measurements instead to plot the torque vs speed graph.
+At the end although our motors did not work very well and some did not work at all, it was perhaps more educational for us thanm it would have been if our motors worked straight away, since we had to dig into the theory behind it and do lots of research to find out what mistakes we were making. Due to all the issues with the motor we were unable to measure the characteristics of our motor physically, so we decided to take our theoratical measurements instead to plot the torque vs speed graph.  
 
-![Excel speed vs torque](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings%20and%20Notes/Roco222%20excel%20snippet%202.PNG?raw=true)  
+		Excel torque vs speed (revolutions per minute) 
+![Excel speed vs torque](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings%20and%20Notes/Roco222%20excel%20snippet%202.PNG?raw=true)
+		Torque vs Speed (RPM) Graph
 ![Excel speed vs torque graph](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings%20and%20Notes/Torque%20vs%20Speed%20snap.PNG?raw=true)
 
  
