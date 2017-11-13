@@ -48,7 +48,7 @@ Two **Poles** facing each other, one is North and the other is south i.e  attrac
 
 An **armature** made up of copper wire wrapped around the **core**. Where the substance that the core is made of and the number of copper wire turns effects the magnetic flux density (B=uin => B=uiN/l, see the lecture snippets below). Each of the two ends of the copper wire are attached to two metal strips known as the commutator.   
 
-<img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Screenshot%20from%202017-10-09%2019-59-10.png?raw=true" height="49.5%" width="49.5%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Screenshot%20from%202017-10-09%2019-59-45.png?raw=true" height="50.5%" width="50.5%"/>
+<img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings%20and%20Notes/Screenshot%20from%202017-10-09%2019-59-10.png?raw=true" height="49.5%" width="49.5%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings%20and%20Notes/Screenshot%20from%202017-10-09%2019-59-45.png?raw=true" height="50.5%" width="50.5%"/>
 
 The **commutator** is made of even metal strips (two strips in this case), stuck on a circle on the same shaft as the core and therefore rotates with the armature and the core. Each metal strip is connected to the copper wire as mentioned above and as it rotates the brushes rub on these strips to conduct electricity through the strips and the coils.
 
@@ -62,11 +62,11 @@ There are two **brushes** connected to a dc power supply, one to the positive te
 Taking a very basic DC motor as an example with a single wire/coil as the armature and only two poles, makes it easier to understand the theory. 
 
 A DC brushed motor is all about electromagnetism. When the current passes through the coil it generates magnetic field around the wire. According to Ampere's right hand screw rule if you hold the wire in the right hand with your thumb pointing in the direction of the curret flow, the magnetic fields are generated in the direction that your fingers would fold. (Lecture note snap below)  
-<img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Amperes%20right%20hand%20screw%20rule.png?raw=true" height="50%" width="50%"/>  
+<img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings%20and%20Notes/Amperes%20right%20hand%20screw%20rule.png?raw=true" height="50%" width="50%"/>  
 When the current is passed through the armature coil between the two poles, the magnetic fields from the coil interacts with the magnetic field running from north to south poles, this generates a magnetic force (F=ILB, F, I and B are vector quantities and L is the length of the wire), on the wire/coil, this magnetic force creates torque (T=F*L) which rotates the motor. 
 
 If we hold the wire like we did in Ampere's rule with the thumb pointing in the direction of current but this time unfold our fingers, we will have thumb pointing in the direction of current and if we move our fingers pointing in the direction of flux density (B) of poles, the magnetic force would be pointing away from the palm perpandicular to both flux density and current.(Snap from lecture notes and an image sourced from [Hyperphysics](http://hyperphysics.phy-astr.gsu.edu/hbase/magnetic/motdc.html) below)  
-<img src="http://hyperphysics.phy-astr.gsu.edu/hbase/magnetic/imgmag/dcmop.gif" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Mag%20force%20hand%20rule.png?raw=true" height="50%" width="50%"/>
+<img src="http://hyperphysics.phy-astr.gsu.edu/hbase/magnetic/imgmag/dcmop.gif" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings%20and%20Notes/Mag%20force%20hand%20rule.png?raw=true" height="50%" width="50%"/>
  
 ## **Part I**  
 # **Build a brushed DC electrical motor**
@@ -127,9 +127,9 @@ Since we designed the first motor to have coil windings parallel to the shaft an
 We also made the diameter of the commutator too big, as this meant that the brushes would have to travel a larger distance to activate the next coil.
 
 		Solidworks, complete shaft, armature rotor and commutator	3D printed commutator and armature rotor 
-<img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%201%20shaft.PNG?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/3D%20print%20motors%20.jpg?raw=true" height="50%" width="50%"/>
+<img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/1st%20Motor/Motor%201%20shaft.PNG?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/1st%20Motor/3d%20print%20motor%201.jpg?raw=true" height="50%" width="50%"/>
 		Solidworks assembly of motor 1					3D printed assembled motor 1 
-<img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%201%20assembly.PNG?raw=true" height="50%" width="50%"/><img src="https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/First_Design_Assembled.JPG?raw=true" height="50%" width="50%"/>
+<img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/1st%20Motor/Motor%201%20assembly.PNG?raw=true" height="50%" width="50%"/><img src="https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/First_Design_Assembled.JPG?raw=true" height="50%" width="50%"/>
 
 
 As you can see above, we decided to save some time and made a wooden frame instead of printing it. This is where Spencer's great wood working skills came in very handy.
@@ -161,10 +161,10 @@ We decided to start making an excel for the calculations of motors, as this coul
 # 
 #### Solidworks
 		Commutator and Armature					Encoder disc shaft 
-<img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20Armature%20and%20commutator.PNG?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20encoder.PNG?raw=true" height="50%" width="50%"/>
+<img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/2nd%20motor/Motor%202%20Armature%20and%20commutator.PNG?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/2nd%20motor/Motor%202%20encoder.PNG?raw=true" height="50%" width="50%"/>
 
 		Motor 2 Frame						Motor 2 Assembly
-<img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20frame.PNG?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Motor%202%20Assembly.PNG?raw=true" height="50%" width="50%"/>
+<img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/2nd%20motor/Motor%202%20frame.PNG?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/2nd%20motor/Motor%202%20Assembly.PNG?raw=true" height="50%" width="50%"/>
 
 # 
 #### 3D Printed Final Model
@@ -197,7 +197,7 @@ We had a running motor which was fairly powerful. However the motor would only r
 
 # 
 
-At the end although our motors did not work very well and some did not work at all, it was perhaps more educational for us than it would have been if our motors worked straight away, since we had to dig into the theory behind it and do lots of research to find out what mistakes we were making. Due to all the issues with the motor we were unable to measure the characteristics of our motor physically, so we decided to take our theoratical measurements instead to plot the torque vs speed graph.
+At the end although our motors did not work very well and some did not work at all, it was perhaps more educational for us thanm it would have been if our motors worked straight away, since we had to dig into the theory behind it and do lots of research to find out what mistakes we were making. Due to all the issues with the motor we were unable to measure the characteristics of our motor physically, so we decided to take our theoratical measurements instead to plot the torque vs speed graph.
 
 
  
