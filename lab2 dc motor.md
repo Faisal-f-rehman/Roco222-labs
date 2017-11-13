@@ -126,11 +126,11 @@ Since we designed the first motor to have coil windings parallel to the shaft an
 
 We also made the diameter of the commutator too big, as this meant that the brushes would have to travel a larger distance to activate the next coil.
 
-		3D printed commutator and armature rotor		Solidworks armature rotor and commutator	 
+		3D printed commutator and armature rotor		Solidworks armature rotor and commutator
 <img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/1st%20Motor/3d%20print%20motor%201.jpg?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/1st%20Motor/Motor%201%20shaft.PNG?raw=true" height="50%" width="50%"/>
 
-		3D printed assembled motor 1				Solidworks assembly of motor 1				 
-<img src="https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/First_Design_Assembled.JPG?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/1st%20Motor/Motor%201%20assembly.PNG?raw=true" height="45%" width="45%"/>
+		3D printed assembled motor 1				Solidworks assembly of motor 1
+<img src="https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/First_Design_Assembled.JPG?raw=true" height="55%" width="55%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/1st%20Motor/Motor%201%20assembly.PNG?raw=true" height="45%" width="45%"/>
 
 
 As you can see above, we decided to save some time and made a wooden frame instead of printing it. This is where Spencer's great wood working skills came in very handy.
