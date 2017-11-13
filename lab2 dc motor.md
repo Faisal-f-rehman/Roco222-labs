@@ -202,6 +202,7 @@ At the end although our motors did not work very well and some did not work at a
 
 		Excel torque vs speed (revolutions per minute) 
 ![Excel speed vs torque](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings%20and%20Notes/Roco222%20excel%20snippet%202.PNG?raw=true)
+
 		Torque vs Speed (RPM) Graph
 ![Excel speed vs torque graph](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings%20and%20Notes/Torque%20vs%20Speed%20snap.PNG?raw=true)
 
