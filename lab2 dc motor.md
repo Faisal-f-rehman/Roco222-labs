@@ -204,7 +204,8 @@ At the end although our motors did not work very well and some did not work at a
 ![Excel speed vs torque](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings%20and%20Notes/Roco222%20excel%20snippet%202.PNG?raw=true)
 
 		Torque vs Speed (RPM) Graph
-![Excel speed vs torque graph](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings%20and%20Notes/Torque%20vs%20Speed%20snap.PNG?raw=true)
+![Excel speed vs torque graph](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings%20and%20Notes/Torque%20vs%20Speed%20snap.PNG?raw=true)  
+
 
 We searched online to check if our theoratical values were atleast reasonable and they seem to be. Following is a snap/image from one of the links we compared our values with:
 ![DC motor datasheets](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings%20and%20Notes/Online%20data%20of%20different%20non%20gear%20motors.PNG?raw=true)  
