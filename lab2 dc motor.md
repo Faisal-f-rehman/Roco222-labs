@@ -128,7 +128,8 @@ We also made the diameter of the commutator too big, as this meant that the brus
 
 		Solidworks armature rotor and commutator	3D printed commutator and armature rotor 
 <img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/1st%20Motor/Motor%201%20shaft.PNG?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/1st%20Motor/3d%20print%20motor%201.jpg?raw=true" height="50%" width="50%"/>
-		Solidworks assembly of motor 1			3D printed assembled motor 1 
+
+		Solidworks assembly of motor 1				3D printed assembled motor 1 
 <img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/1st%20Motor/Motor%201%20assembly.PNG?raw=true" height="50%" width="50%"/><img src="https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/First_Design_Assembled.JPG?raw=true" height="50%" width="50%"/>
 
 
