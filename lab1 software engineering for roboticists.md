@@ -250,4 +250,9 @@ References Lab 1:
  [edutechional youtube](https://www.youtube.com/watch?v=_gknWWa2OF0)  
  [dev notes](http://dev-notes.eu/2016/01/images-in-kramdown-jekyll/)  
 
+# 
+# 
+
+		Lab-2 link below
+[Lab2 Build a DC motor](https://github.com/Faisal-f-rehman/journal.md/blob/master/lab2%20dc%20motor.md)
 
