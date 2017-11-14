@@ -256,3 +256,5 @@ References Lab 1:
 		Lab-2 link below
 [Lab2 Build a DC motor](https://github.com/Faisal-f-rehman/journal.md/blob/master/lab2%20dc%20motor.md)
 
+For links to other labs please see the Index on top.
+

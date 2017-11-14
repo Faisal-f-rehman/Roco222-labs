@@ -217,3 +217,5 @@ Image source: [www.transmotec.com](https://transmotec.com/product-category/dc-mo
 		Lab-3 link below
 [Lab3 Incremental Encoder](https://github.com/Faisal-f-rehman/Roco222-labs/blob/master/lab3%20Incremental%20Encoder.md)
 
+For links to other labs please see the Index on top.
+
