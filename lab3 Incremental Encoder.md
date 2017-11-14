@@ -40,10 +40,10 @@ _PHOTOTRANSISTOR EQUIVALENT CIRCUIT_
 ![Phototransistor Equivalent](http://www.tpub.com/neets/book7/0174.GIF)
 Image source: [www.tpub.com](http://www.tpub.com/neets/book7/26g.htm)  
   
-
+<br><br>
 
 Once we know how a phototransistor works rest is fairly simple. We fit the IR LED facing the phototransistor and keep the IR LED on. We then install the disc with a slot/gap on it, between the IR LED and the phototransistor to keep the the light from the IR LED shinning on to the phototransistor until the slot/gap in the disc is between the IR LED and the phototransistor. Every time we get a gap in the disc as it rotates the phototransistor turns on and we get a voltage (pulse) on the output of the phototransistor. 
 
 _OPTICAL ENCODER_
-<img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/encoder/optical%20encoder.png?raw=true" height="50%" width="50%"/>  
+<img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/encoder/optical%20encoder.png?raw=true" height="40%" width="40%"/>  
 Image source: [Labsheet Lab3-Incremental encoder]
