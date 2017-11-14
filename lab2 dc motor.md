@@ -144,11 +144,11 @@ By this time lab 3 encoder was out, so we decided to incorporate a suitable hold
 ### Considerations taken for the improved motor design:
 
 #### Formulas to consider
-![Flux Density, Force and Torque](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings/Page%201.jpeg?raw=true)
-![Torque and Power equation](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings/Page%202.jpeg?raw=true)
+![Flux Density, Force and Torque](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings%20and%20Notes/Page%201.jpeg?raw=true)
+![Torque and Power equation](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings%20and%20Notes/Page%202.jpeg?raw=true)
 
 #### Rough armature sketch and dimensions
-![Armatutre sketch ](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings/Page%202.jpeg?raw=true)  
+![Armatutre sketch ](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings%20and%20Notes/Page%203%20edit.jpg?raw=true)  
 
 As you can see from the sketches above we decided to wind the coil in almost a lap-winding formation wrapped 'around'the rotar/shaft. This meant that we could print a hollow rotar/core and slide a piece of material with high relative permiability, as this would increase the magnetic flux dramatically without introducing cogging.
 <img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/2nd%20motor/2nd%20motor%20steel%20core1.jpg?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/2nd%20motor/2nd%20motor%20steel%20core2.jpg?raw=true" height="50%" width="50%"/> 
@@ -157,7 +157,7 @@ As you can see from the sketches above we decided to wind the coil in almost a l
 #### Calculations
 We decided to start making an excel for the calculations of motors, as this could be very handy to refer back to later on. This also helps us to make graphs for analysis.
 
-![DC brushed motor excel](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings/Roco222%20excel%20snippet%201.PNG?raw=true)
+![DC brushed motor excel](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Motor/Workings%20and%20Notes/Roco222%20excel%20snippet%202.PNG?raw=true)
 
 # 
 #### Solidworks
