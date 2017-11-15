@@ -21,7 +21,6 @@
 In this lab we are going to build an optical incremental encoder for our motor, so that we can read a pulse for every full rotation made by the motor. This is the most basic form of an encoder however it will allow us to measure the speed of our motor. 
 
 ### What we have to build the encoder and how it works
-
 		Components used 
 + An Infra-red Led
 + A Phototransistor 
@@ -132,6 +131,7 @@ void blink()
 
 ```
 <br>
+# 
 
 		Code explaination
 ```C
@@ -160,6 +160,72 @@ void loop()
 void blink() 				//this function is called everytime the interrupt occurs(on a rising edge) ie on every pulse from the encoder
 {
 	state = !state;			//toggle current state (on to off and off to on)
+}
+
+```
+<br><br>
+# 
+
+
+## Calculate the angular velocity of your motor
+
+
+		Code to calculate Speed(RPM) of the motor
+
+```C
+
+//-------Declare variables------//
+const byte ledPin = 13;
+const byte interruptPin = 2;
+volatile byte state = LOW;
+unsigned long i = 0;
+unsigned long time_bank[99];
+unsigned long new_time = 0;
+float rpm = 0.00;
+float total_time_per_cycle = 0.00;
+float time_per_cycle = 0.00;
+
+
+void setup()
+{
+  pinMode(ledPin, OUTPUT);                              //set onboard led, pin 13 to output
+  pinMode(interruptPin, INPUT);                         //set pin 2, interrupt pin as input
+  Serial.begin(9600);                                   //baudrate 9600 
+  
+  // configure the interrupt call-back: blink is called everytime the pin
+  // goes from low to high.
+  attachInterrupt(digitalPinToInterrupt(interruptPin), blink, CHANGE);
+}
+
+void loop()
+{
+  digitalWrite(ledPin, state);                          //initialise pin 13 (onboard led)as LOW 
+}
+
+void blink()
+{ 
+  if(state = !state)                                    //enter if rotation is complete
+  { 
+    int u = 0;
+    i++;
+    new_time = micros();                                //assign current time to new_time
+    time_bank[i] = new_time;                            //store current time in the array time_bank
+    time_per_cycle = time_bank[i]-time_bank[i-1];       //assign time difference between last pulse and current pulse detected
+    total_time_per_cycle += time_per_cycle*0.000001*60; //convert time difference from micro-seconds to minutes and add to the total time taken for the rotations so far 
+    rpm = float(i/total_time_per_cycle);                //divide total rotations(pulses) by total time to get rotations per minute RPM 
+
+    if(i>98)                                            //reset rotaions counted back to zero
+    {
+      i=0;
+    }
+    
+    Serial.println(i);                                  //print number of rotations to serial port
+    Serial.println(total_time_per_cycle);               //print total time taken for the rotations so far to serial port
+    Serial.println(rpm,2);                              //print speed(RPM) to 2 decimal points
+  }
+  new_time=0;
+  rpm = 0.00;
+  
 }
 
 ```
