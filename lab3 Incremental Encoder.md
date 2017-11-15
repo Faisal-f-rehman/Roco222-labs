@@ -68,13 +68,16 @@ Led Resistor can be calculated by the following formula
 
 ![-------------------](--------------)
 
+<br>
+
 We wired up the circuit on the Vero board however rather than a cardboard cut out, since we were 3D printing our DC motor for Lab 2, we decided to print the disc on the shaft and a holder for the IR LED and phototransistor on the frame.
 
-		3D printed encoder disc		3D printed holder and motor frame
+		3D printed encoder disc			3D printed holder and motor frame
 <img src="https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/3D_Printed_Encoder.JPG?raw=true" height="50%" width="50%"/><img src="https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/Second_design_Mount_Fitted_bearings.JPG?raw=true" height="50%" width="50%"/>
 
-<br><br>
-		Wired up Vero board		IR LED installed into the holder
+<br>
+
+		Wired up Vero board			IR LED installed into the holder
 <img src="https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/Encoder1.jpg?raw=true" height="50%" width="50%"/><img src="https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/media/Encoder2.jpg?raw=true" height="50%" width="50%"/>
 
 
@@ -128,12 +131,14 @@ void blink()
 }
 
 ```
+<br>
 
 		Code explaination
 ```C
 const byte ledPin = 13;			//Declare and assign a constant 4 bits variable ledPin to pin 13, onboard LED pin internally connected
 const byte interruptPin = 2;		//Declare and assign a constant 4 bits variable interruptPin to pin 2, one of the two interrupt pins available by default
-volatile byte state = LOW;		//Declare and assign a volatile 4 bits variable state to initialise LOW ie 0 or off, a volatile variable is manipulated and stored in the RAM rather than storage registers 
+volatile byte state = LOW;		//Declare and assign a volatile 4 bits variable state to initialise LOW ie 0 or off, a volatile variable is manipulated 
+		                        //and stored in the RAM rather than storage registers 
 
 void setup()
 {
