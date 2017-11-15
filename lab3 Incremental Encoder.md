@@ -12,10 +12,6 @@
 
 [Lab4]()
 
-[Lab5]()
-
-[Lab6]()
-
 # **Lab3 Incremental Encoder**
 
 In this lab we are going to build an optical incremental encoder for our motor, so that we can read a pulse for every full rotation made by the motor. This is the most basic form of an encoder however it will allow us to measure the speed of our motor. 
@@ -233,6 +229,14 @@ void blink()
 
 ```
 
+
+
+<br><br><br>
+
+		Lab 4 Controlling the motor
+[Lab 4 Controlling the motor]()
+
+For links to other labs please see the Index on top.
 
 
 
