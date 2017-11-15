@@ -170,6 +170,8 @@ void blink() 				//this function is called everytime the interrupt occurs(on a r
 
 ## Calculate the angular velocity of your motor
 
+Modify the program to count the number of pulses. Use this count to output on the serial port the speed of your
+motor every second.
 
 		Code to calculate Speed(RPM) of the motor
 
