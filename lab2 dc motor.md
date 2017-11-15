@@ -9,6 +9,7 @@
 
 [Lab3 Incremental Encoder](https://github.com/Faisal-f-rehman/Roco222-labs/blob/master/lab3%20Incremental%20Encoder.md)
 
+[Lab4](https://github.com/Faisal-f-rehman/Roco222-labs/blob/master/lab4%20Controlling%20the%20motor.md)
 
 # **Lab2 Build a DC motor**
 
