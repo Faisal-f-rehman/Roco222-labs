@@ -166,8 +166,41 @@ void blink() 				//this function is called everytime the interrupt occurs(on a r
 
 ## Calculate the angular velocity of your motor
 
-Modify the program to count the number of pulses. Use this count to output on the serial port the speed of your
-motor every second.
+Modify the program to count the number of pulses. Use this count to output on the serial port the speed of your motor every second.
+
+<br>
+
+Since our motor from lab 2 was not working properly we decided to rotate the motor by hand to test and demonstrate the code for calculating RPM:
+
+![https://github.com/Faisal-f-rehman/pics.vids/blob/master/encoder/RPM%20with%20encoder.png?raw=true](https://www.youtube.com/watch?v=d97QLLiQzQk)
+
+<br>
+
+Although it is very difficult to get an idea of the motor's rotational speed when rotating the motor by hand, the rpm displayed on serial seems reasonable, also the RPM did fall and rise accordingly as we slowed down and speed up the motor.
+
+		Readings from the terminal
+
+ **RPM**		 	| **Total Rotations yet**	|**Total Time in minutes** 
+  :-----------------------------| :---------------------------: | :----------------:
+198.80 				| 75				| 0.37 
+200.16				| 76				| 0.38 
+201.59				| 77				| 0.38
+202.89				| 78				| 0.38
+204.08				| 79				| 0.38
+205.27				| 80				| 0.39
+206.46				| 81				| 0.39
+207.55				| 82				| 0.39
+208.56				| 83				| 0.40
+209.40				| 84				| 0.40
+210.19				| 85				| 0.40
+210.64				| 86				| 0.41
+207.71				| 87				| 0.42
+208.99				| 88				| 0.42
+210.13				| 89				| 0.42
+211.10				| 90				| 0.42
+211.81				| 91				| 0.43
+212.11				| 92				| 0.44 
+
 
 		Code to calculate Speed(RPM) of the motor
 

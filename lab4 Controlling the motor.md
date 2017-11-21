@@ -15,7 +15,7 @@
 
 <br><br><br>
 
-# **Controlling the motor**
+# **Lab 4 - Controlling the motor**
 
 In this lab we are going to control our motor in a closed loop formation by connecting the encoder on the motor that we built in lab 2 and 3, to Arduino. The encoder is going to give us the actual speed, which we are going to compare with the goal speed (speed that we wish to acheive). The difference between the actual speed detected from the encoder and the goal speed is then going to determine weather to slow down the motor or speed it up in order to achieve the goal speed.
 
@@ -35,6 +35,8 @@ There are two main reasons to use t he motor shield:
 	A H-bridge is a circuit that allows us to switch the direction of the voltage on the outputs, which allows us to drive a motor in both the forward and reverse directions. This is done by 4 Bipolar junction transistors (BJTs) or MOSFETS, and diodes for some protection of the motor shield. These are connected in the following order:
 
 ![H-bridge main](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Controlling%20the%20motor/H-Bridge%20main.png?raw=true)
+Image source:[www.modularcircuits.com](http://www.modularcircuits.com/blog/articles/h-bridge-secrets/h-bridges-the-basics/)  
+
 
 Here Q1 and Q3 are connected to the positive (Vbat), rail of the power supply and Q2 and Q4 are connected to ground.  
 
@@ -48,7 +50,7 @@ Please note that 'A' side and 'B' side in the H-bridge are
 		_Case 1_ Forward direction		_Case 2_ Reverse direction
 
 <img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Controlling%20the%20motor/H-bridge%201.png?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/Controlling%20the%20motor/H-Bridge%202.png?raw=true" height="50%" width="50%"/>
-
+Image source:[www.modularcircuits.com](http://www.modularcircuits.com/blog/articles/h-bridge-secrets/h-bridges-the-basics/)
 <br><br><br>
 
 ## **Part I**
@@ -63,7 +65,9 @@ However since we were running behind we purchased a motorshield online (SAINSMAR
 
 Although finding the Arduino pins for direction and PWM on this motorshield was a time taking task wired connections were the same, as this motorshield slots on top of the Arduino UNO board as well.
 
-
+M2
+Motorshield pin 2 for directions
+Motorshield pin 11 for PWM (speed) 
 
 
 
