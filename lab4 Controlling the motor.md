@@ -12,6 +12,8 @@
 
 [Lab3 Incremental Encoder](https://github.com/Faisal-f-rehman/Roco222-labs/blob/master/lab3%20Incremental%20Encoder.md)
 
+[Lab 5 Stepper motors]()
+
 
 <br><br><br>
 
@@ -61,13 +63,95 @@ The connections for the motor shield provided by university (Arduino Motor Shiel
 
 ![Motor Sheild Rev3](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Controlling%20the%20motor/Uni%20motor%20shield%20connections.png?raw=true)
 
-However since we were running behind we purchased a motorshield online (SAINSMART L293D Motorshield) and started working on it at home. This actually helped us understand how to read through datasheets and schematics to find pins and setup a motorshield from scratch.
+The basic code to run the hobby motor provided in the labsheet is as follows:
 
-Although finding the Arduino pins for direction and PWM on this motorshield was a time taking task wired connections were the same, as this motorshield slots on top of the Arduino UNO board as well.
+		Motor Shield 1-Channel DC Motor
 
-M2
-Motorshield pin 2 for directions
-Motorshield pin 11 for PWM (speed) 
+```C
+
+/*************************************************************
+Motor Shield 1-Channel DC Motor
+by Randy Sarafan
+For more information see:
+https://www.instructables.com/id/Arduino-Motor-Shield-Tutorial/
+*************************************************************/
+
+void setup() {
+	//Setup Channel A
+	pinMode(12, OUTPUT); //Initiates Motor Channel A pin
+	pinMode(9, OUTPUT); //Initiates Brake Channel A pin
+}
+
+void loop(){
+	//forward @ full speed
+	digitalWrite(12, HIGH); //Establishes forward direction of Channel A
+	digitalWrite(9, LOW);	//Disengage the Brake for Channel A
+	analogWrite(3, 255);
+
+	//Spins the motor on Channel A at full speed
+	delay(3000);
+	digitalWrite(9, HIGH); //Engage the Brake for Channel A
+	delay(1000);
+
+	//backward @ half speed
+	digitalWrite(12, LOW); //Establishes backward direction of Channel A
+	digitalWrite(9, LOW);  //Disengage the Brake for Channel A
+	analogWrite(3, 123);
+
+	//Spins the motor on Channel A at half speed
+	delay(3000);
+	digitalWrite(9, HIGH); //Eengage the Brake for Channel A
+	delay(1000);
+}
+	
+
+```
+
+**Code explaination**
+
+Pin 12 has been set as a digital output pin which controls the direction of the motor (forward and backwards), by changing it between high and low.
+
+Pin 9 has been set as a digital output pin and is used to engage or disengage brakes on the motor, by setting the output high to brake and low to release the brakes 
+
+Pin 3 is used to set the rotational speed of the motor by sending an analogue signal between amplitude 0 to 255, where 255 is the maximum speed
+
+The delay(__) function is library added function thats just a loop keeping the program locked inside it for a given time. The argument time provided is in milliseconds.
+
+**Demonstration**
+
+[![Controlling small hobby motor]()]()
+
+<br><br>
+
+## **Part II**
+
+## Controlling your DC motor in closed-loop
+
+**Step 1 – Get your DC motor to rotate**  
+
+Now, replace the small provided DC motor by your own motor. You might need to provide more current: use
+the lab power supply to power the motor shield, but set the maximum current to 2A and do not exceed 12V,
+otherwise you will damage the motor shield.  
+
+**Step 2 – Close the loop**  
+
+Using your encoder and the Arduino program you wrote last week to read the speed, write a new program that
+allow to set the desired speed of the motor in RPM, and accordingly control the motor.
+
+
+
+
+
+
+
+
+<br><br><br>
+
+		Lab 5 Stepper motors
+[Lab 5 Stepper motors]()
+
+For links to other labs please see the Index on top.
+
 
 
 
