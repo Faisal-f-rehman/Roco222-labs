@@ -172,7 +172,7 @@ Modify the program to count the number of pulses. Use this count to output on th
 
 Since our motor from lab 2 was not working properly we decided to rotate the motor by hand to test and demonstrate the code for calculating RPM:
 
-![https://github.com/Faisal-f-rehman/pics.vids/blob/master/encoder/RPM%20with%20encoder.png?raw=true](https://www.youtube.com/watch?v=d97QLLiQzQk)
+[![RPM to arduino serial](https://github.com/Faisal-f-rehman/pics.vids/blob/master/encoder/RPM%20with%20encoder.png?raw=true)](https://www.youtube.com/watch?v=d97QLLiQzQk)
 
 <br>
 
