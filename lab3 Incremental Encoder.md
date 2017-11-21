@@ -12,6 +12,8 @@
 
 [Lab4 Controlling the motor](https://github.com/Faisal-f-rehman/Roco222-labs/blob/master/lab4%20Controlling%20the%20motor.md)
 
+[Lab 5 Stepper motors](https://github.com/Faisal-f-rehman/Roco222-labs/blob/master/lab5%20Stepper%20Motors.md)
+
 # **Lab3 Incremental Encoder**
 
 In this lab we are going to build an optical incremental encoder for our motor, so that we can read a pulse for every full rotation made by the motor. This is the most basic form of an encoder however it will allow us to measure the speed of our motor. 

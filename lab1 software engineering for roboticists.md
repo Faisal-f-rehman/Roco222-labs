@@ -12,7 +12,7 @@
 
 [Lab4 Controlling the motor](https://github.com/Faisal-f-rehman/Roco222-labs/blob/master/lab4%20Controlling%20the%20motor.md)
 
-
+[Lab 5 Stepper motors](https://github.com/Faisal-f-rehman/Roco222-labs/blob/master/lab5%20Stepper%20Motors.md)
 
 
 # **Lab1 Software engineering for roboticists**

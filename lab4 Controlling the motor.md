@@ -12,7 +12,7 @@
 
 [Lab3 Incremental Encoder](https://github.com/Faisal-f-rehman/Roco222-labs/blob/master/lab3%20Incremental%20Encoder.md)
 
-[Lab 5 Stepper motors]()
+[Lab 5 Stepper motors](https://github.com/Faisal-f-rehman/Roco222-labs/blob/master/lab5%20Stepper%20Motors.md)
 
 
 <br><br><br>
@@ -118,8 +118,10 @@ Pin 3 is used to set the rotational speed of the motor by sending an analogue si
 The delay(__) function is library added function thats just a loop keeping the program locked inside it for a given time. The argument time provided is in milliseconds.
 
 **Demonstration**
-
-[![Controlling small hobby motor]()]()
+		Slower version to see the direction
+[![](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Controlling%20the%20motor/Arduino%20hobby%20motor%20control%20slow.png?raw=true)](https://www.youtube.com/watch?v=1HtDqOqexIA)
+		Faster version
+[![](https://github.com/Faisal-f-rehman/pics.vids/blob/master/Controlling%20the%20motor/Arduino%20motor%20control%20fast.png?raw=true)](https://www.youtube.com/watch?v=_2DxTlCiI5U)
 
 <br><br>
 
@@ -148,7 +150,7 @@ allow to set the desired speed of the motor in RPM, and accordingly control the 
 <br><br><br>
 
 		Lab 5 Stepper motors
-[Lab 5 Stepper motors]()
+[Lab 5 Stepper motors](https://github.com/Faisal-f-rehman/Roco222-labs/blob/master/lab5%20Stepper%20Motors.md)
 
 For links to other labs please see the Index on top.
 
