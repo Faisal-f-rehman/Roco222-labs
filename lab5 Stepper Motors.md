@@ -2,7 +2,7 @@
 
 ## **FAISAL FAZAL-UR-REHMAN** 
 
-
+[Lab Partner: Spencer]()
 
 ## **Index**
 
@@ -14,6 +14,10 @@
 
 [Lab4 Controlling the motor](https://github.com/Faisal-f-rehman/Roco222-labs/blob/master/lab4%20Controlling%20the%20motor.md)
 
+[Lab6 Robotic Arm Mini-project Part 1 – Servo motors](https://github.com/Faisal-f-rehman/Roco222-labs/blob/master/lab6%20Robotic%20Arm%20Mini-project%0APart%201%20%E2%80%93%20Servo%20motors.md)
+
+[Lab7 Robotic Arm Mini-project Part 2 – ROS](https://github.com/Faisal-f-rehman/Roco222-labs/blob/master/lab7%20Robotic%20Arm%20Mini-project%0APart%202%20%E2%80%93%20ROS.md)
+
 # **Lab5**
 
 
@@ -22,7 +26,7 @@
 <br><br><br>
 
 		Lab 6 servo motors mini-project
-[Lab 6 servo motors mini-project]()
+[Lab 6 servo motors mini-project](https://github.com/Faisal-f-rehman/Roco222-labs/blob/master/lab6%20Robotic%20Arm%20Mini-project%0APart%201%20%E2%80%93%20Servo%20motors.md)
 
 For links to other labs please see the Index on top.
 
