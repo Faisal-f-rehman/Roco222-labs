@@ -2,7 +2,7 @@
 
 ## **FAISAL FAZAL-UR-REHMAN** 
 
-[Lab Partner: Spencer]()
+[Lab Partner: Spencer Perdomo-Davies](https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/Stepper_Motors.md)
 
 ## **Index**
 

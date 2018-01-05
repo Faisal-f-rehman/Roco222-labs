@@ -2,7 +2,7 @@
 
 ## **FAISAL FAZAL-UR-REHMAN** 
 
-[Lab Partner: Spencer]()
+[Lab Partner: Spencer](https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/Motor_Control_With_The_Arduino.md)
 
 ## **Index**
 

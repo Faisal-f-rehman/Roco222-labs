@@ -2,7 +2,7 @@
 
 ## **FAISAL FAZAL-UR-REHMAN, Student ID** 
 
-[Lab Partner: Spencer]()
+[Lab Partner: Spencer Perdomo-Davies](https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/ROS.md)
 
 ## **Index**
 [Lab1 Software engineering for roboticists](https://github.com/Faisal-f-rehman/Roco222-labs/blob/master/lab1%20software%20engineering%20for%20roboticists.md)

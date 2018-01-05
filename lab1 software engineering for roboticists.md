@@ -1,8 +1,8 @@
 # **ROCO222 LAB-JOURNAL**
 
-## **FAISAL FAZAL-UR-REHMAN, Student ID** 
+## **FAISAL FAZAL-UR-REHMAN 
 
-[Lab Partner: Spencer]()
+[Lab Partner: Spencer Perdomo-Davies](https://github.com/slperdomo-davies/Roco222--Lab-Journal/blob/master/journal.md)
 
 ## **Index**
 
