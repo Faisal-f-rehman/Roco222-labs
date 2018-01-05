@@ -14,7 +14,7 @@
 
 [Lab4 Controlling the motor](https://github.com/Faisal-f-rehman/Roco222-labs/blob/master/lab4%20Controlling%20the%20motor.md)
 
-# **Lab5**
+# **Lab7**
 
 
 
