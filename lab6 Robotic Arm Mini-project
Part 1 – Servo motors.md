@@ -51,6 +51,20 @@ Servo motors are high torque, low speed, position control electrical (DC) motors
 <img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/servo_pwm.png?raw=true" height="70%" width="70%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/servo_PWM.gif?raw=true" height="30%" width="30%"/>
 To control the servo motor we will send PWM (Pulse Width Modulation) signals. The ratio between when the PWM signal is high and when it is low determines the position of the servo. Typical PWM ratios for servos are between 20/0.7 to 20/2.0, where 20/0.7 is the furthest anti-clockwise position, 20/2.0 is the furthest clockwise position and 20/1.5 is the center position of the servo. The numerator of the ratio is the period of the PWM which is = 20ms and the denominators are the duration of the signal when its high (0.7ms to 2.0ms). 
 
+### Step 1 – Control an RC servo
+
+In this part we are going to write a code on arduino to simply move the servo all the way clockwise and anti-clockwise 
+
+		Connections
+![Step1 connections](https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/direct_servo_to_arduino.png?raw=true)   
+
+BLACK wire = GND
+RED wire = Vin
+YELLOW wire = PWM
+
+		Arduino Code
+Although there is a library for the servo in arduino which makes things lot simpler, we decided to do this lab by writing the code without the library, to try and understand whats going on between the servo and the Arduino
+
 
 
 
