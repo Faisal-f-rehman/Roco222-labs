@@ -53,7 +53,7 @@ Servo motors are high torque, low speed, position control electrical (DC) motors
 To control the servo motor we will send PWM (Pulse Width Modulation) signals. The ratio between when the PWM signal is high and when it is low determines the position of the servo. Typical PWM ratios for servos are between 20/0.7 to 20/2.0, where 20/0.7 is the furthest anti-clockwise position, 20/2.0 is the furthest clockwise position and 20/1.5 is the center position of the servo. The numerator of the ratio is the period of the PWM which is = 20ms and the denominators are the duration of the signal when its high (0.7ms to 2.0ms). 
 
 					Servo control Pusle Width Modulation
-<img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/servo_pwm.png?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/servo_PWM.gif?raw=true" height="50%" width="50%"/>
+<img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/servo_pwm.png?raw=true" height="60%" width="60%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/servo_PWM.gif?raw=true" height="40%" width="40%"/>
 
 
 <br><br><br>
