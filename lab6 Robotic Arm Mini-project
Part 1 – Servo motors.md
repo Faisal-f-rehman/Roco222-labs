@@ -21,12 +21,12 @@
 
 Lab6 and lab7 combined cover a mini project in which we are going to build a robotic arm. This is split in 6 parts which are as follows:
 
-1 Servo motor control with Arduino
-2 3D design and 3D printing 
-3 Assembling the arm
-4 Servo motor control with Arduino through terminal
-5 Rviz 3D simulation of the arm, written in URDF (XML format)
-6 3D motion planning and finalisation
+1) Servo motor control with Arduino
+2) 3D design and 3D printing 
+3) Assembling the arm
+4) Servo motor control with Arduino through terminal
+5) Rviz 3D simulation of the arm, written in URDF (XML format)
+6) 3D motion planning and finalisation
 
 In this lab we are just going to cover the first part (Servo motor control with Arduino). The components and materials used are as follows:
 
@@ -42,18 +42,16 @@ In this lab we are just going to cover the first part (Servo motor control with 
 
 
 ### Servo motor basics
-
-Servo motors are high torque, low speed, position control electrical (DC) motors in a closed loop configuration. Where the feedback in the loop is fed through an op-amp comparator. The comparator compares the target (input) signal and the output signal and ouputs the difference between the two, called the error signal. This error signal drives the servo motor. Once the difference between target and output signal equal's to zero ie error = 0 the servo motor stops rotating.  
-
-
 		Servo control closed loop circuit
 ![Servo control closed loop circuit](https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/servo_closed_loop_system_lab_snip.png?raw=true)   
 
-
-To control the servo motor we will send PWM (Pulse Width Modulation) signals. The ratio between when the PWM signal is high and when it is low determines the position of the servo. Typical PWM ratios for servos are between 20/0.7 to 20/2.0, where 20/0.7 is the furthest anti-clockwise position, 20/2.0 is the furthest clockwise position and 20/1.5 is the center position of the servo. The numerator of the ratio is the period of the PWM which is = 20ms and the denominators are the duration of the signal when its high (0.7ms to 2.0ms). 
+Servo motors are high torque, low speed, position control electrical (DC) motors in a closed loop configuration. Where the feedback in the loop is fed through an op-amp comparator. The comparator compares the target (input) signal and the output signal and ouputs the difference between the two, called the error signal. This error signal drives the servo motor. Once the difference between target and output signal equal's to zero ie error = 0 the servo motor stops rotating.  
 
 					Servo control Pusle Width Modulation
 <img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/servo_pwm.png?raw=true" height="70%" width="70%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/servo_PWM.gif?raw=true" height="30%" width="30%"/>
+To control the servo motor we will send PWM (Pulse Width Modulation) signals. The ratio between when the PWM signal is high and when it is low determines the position of the servo. Typical PWM ratios for servos are between 20/0.7 to 20/2.0, where 20/0.7 is the furthest anti-clockwise position, 20/2.0 is the furthest clockwise position and 20/1.5 is the center position of the servo. The numerator of the ratio is the period of the PWM which is = 20ms and the denominators are the duration of the signal when its high (0.7ms to 2.0ms). 
+
+
 
 
 <br><br><br>
