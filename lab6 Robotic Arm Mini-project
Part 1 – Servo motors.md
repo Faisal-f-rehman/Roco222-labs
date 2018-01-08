@@ -59,21 +59,21 @@ To control the servo motor we will send PWM (Pulse Width Modulation) signals. Th
 		Wire up connections
 ![Step1 connections](https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/direct_servo_to_arduino.png?raw=true)   
 
-BLACK wire = GND
-RED wire = Vin
-YELLOW wire = PWM
+BLACK wire = GND  
+RED wire = Vin  
+YELLOW wire = PWM  
 
 		Arduino Code
 Although there is a library for the servo in arduino which makes things lot simpler, we decided to do this lab by writing the code without the library, to try and understand whats going on between the servo and the Arduino.
 
 *calculations*  
-Period(Total) = 1/frequency(f) = 1/0.2 = 5sec = 5000ms
-Period(T) per cycle = 20ms
-Total steps available = 5000/20 = 250 steps
-PWM pulse range up = 700us to 2000us
-PWM pulse range down = 1990us to 890us
-Incrments = Highest range/half steps = (2000-700)/125 = 1300/125 = 10.4
-Decrements =  Highest range/half steps =((2000-10)-800)/124 = (1990-800)/124 = 1190/124 = 9.6
+Period(Total) = 1/frequency(f) = 1/0.2 = 5sec = 5000ms  
+Period(T) per cycle = 20ms  
+Total steps available = 5000/20 = 250 steps  
+PWM pulse range up = 700us to 2000us  
+PWM pulse range down = 1990us to 890us  
+Incrments = Highest range/half steps = (2000-700)/125 = 1300/125 = 10.4  
+Decrements =  Highest range/half steps =((2000-10)-800)/124 = (1990-800)/124 = 1190/124 = 9.6  
 
 		Arduino Code
 ```c
@@ -140,10 +140,10 @@ void PWM (void)
 
 		Wire up connections
 *components*  
-Arduino UNO
-Potentiometer
-Servo
-Jumper wires  
++ Arduino UNO
++ Potentiometer
++ Servo
++ Jumper wires  
 
 ![servo_pot_connections]()
 source: [www.electroschematics.com](http://www.electroschematics.com/wp-content/uploads/2015/03/arduino-servo.jpg)
