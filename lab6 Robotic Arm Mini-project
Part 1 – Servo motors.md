@@ -75,7 +75,6 @@ PWM pulse range down = 1990us to 890us
 Incrments = Highest range/half steps = (2000-700)/125 = 1300/125 = 10.4  
 Decrements =  Highest range/half steps =((2000-10)-800)/124 = (1990-800)/124 = 1190/124 = 9.6  
 
-		Arduino Code
 ```c
 
 #define pwm_pin 9
@@ -145,7 +144,7 @@ void PWM (void)
 + Servo
 + Jumper wires  
 
-![servo_pot_connections]()
+![servo_pot_connections](https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/servo_pot_connections.jpg?raw=true)
 source: [www.electroschematics.com](http://www.electroschematics.com/wp-content/uploads/2015/03/arduino-servo.jpg)
 
 		Arduino code
@@ -287,12 +286,12 @@ void pot_servo_control(void)
 ```
 
 		Video clip
-[![](pic)](video)
+[![](https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/pot_servo_YT_pic.png?raw=true)](https://www.youtube.com/watch?v=FRAY-nrpsCE)
 
 <br><br>
 
 ### Step 3 – A robot arm mock-up
-
+[![](https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/servo_cardboard_YT_pic.png?raw=true)](https://www.youtube.com/watch?v=nrsmyMrSH78)
 
 <br><br><br>
 
