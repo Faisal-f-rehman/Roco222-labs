@@ -291,6 +291,154 @@ void pot_servo_control(void)
 <br><br>
 
 ### Step 3 – A robot arm mock-up
+
+*Components*
++ Arduino UNO
++ 2 Servos
++ 1 Potentiometer
++ Jumper wires
++ Breadboard
++ Cardboard cut out
+
+Spencer cut out an awesome hand, out of cardboard and decided that we can make it look like a hand waving. Since we had already demonstrated controling one servo per potentiometer, we decided to attach two servos to one potentiometer this time. Spencer wrote his own seperate code and I used the code from part 2 by attaching both servos to the same pwm pin in parallel.
+
+		Arduino code
+ ```c
+
+//---Pin assignments to names---//
+#define pot_pinL 5        //for left potentiometer
+#define pwm_pinL 9        //for left PWM
+#define pot_pinR 4        //for right potentiometer
+#define pwm_pinR 10       //for right PWM
+
+#define pot_sens 20       //change to adjust sensitivity of potentiometers
+
+//Global variable declaration
+
+//LEFT
+int voltL = 0; 
+float potL=0;
+int rem_periodL = 0;
+int state_checkerL = 0;
+
+//RIGHT
+int voltR = 0; 
+float potR=0;
+int rem_periodR = 0;
+int state_checkerR = 0;
+
+//-----setup -- not looped------//
+void setup()
+{
+ pinMode(pwm_pinL, OUTPUT); //set PWM left motor pin as output
+ pinMode(pot_pinL, INPUT);  //set left potentiometer pin as input
+ pinMode(pwm_pinR, OUTPUT); //set PWM right motor pin as output
+ pinMode(pot_pinR, INPUT);  //set right potentiometer pin as input
+ Serial.begin(9600);        //set baudrate
+}
+
+//------main loop -- infinite loop------//
+void loop ()
+{
+ pot_servo_control();       //call function pot_servo_control()
+}
+
+//---------END OF PROGRAME---------//
+
+
+void pot_servo_control(void)
+{ 
+   
+   //-----------------------------------------------------Left Servo
+
+   //checks the current value of RIGHT potentiometer against
+   //the last value and keeps in loop until change occurs. pot_sens allows room for switch bounce
+   while(state_checkerR <= analogRead(pot_pinR)+pot_sens && state_checkerR >= analogRead(pot_pinR)-pot_sens)
+   {   
+     voltL = analogRead(pot_pinL);      //assign potentiometer value to voltL = 0 to 1024 (10-bit ADC)
+     potL = ((voltL/512.00)*1000)+511;  //calculate high pulse width in microseconds, values between 511 to 2511
+     digitalWrite(pwm_pinL, HIGH);      //set pwm pin high
+     delayMicroseconds(potL);           //set time delay for calculated value held in potL 
+     digitalWrite(pwm_pinL, LOW);       //set pwm pin low
+     rem_periodL = 2000-potL;           //calculate pwm pin low time delay
+     delayMicroseconds(rem_periodL);    //set time delay for calculated value held in rem_periodL
+
+      //debugger
+//     Serial.print("MOVING left----------");
+//     Serial.print(potL);
+//     Serial.print("\t");
+//     Serial.print(rem_periodL);
+//     Serial.print("--left\r\n");
+         
+     state_checkerL=analogRead(pot_pinL);   //assign potentiometer value to state checker
+     state_checkerR=analogRead(pot_pinR);   //assign potentiometer value to state checker
+
+     //checks LEFT AND RIGHT potentiometer values and keeps in loop until change occurs
+     while((state_checkerL <= analogRead(pot_pinL)+pot_sens && state_checkerL >= analogRead(pot_pinL)-pot_sens) 
+       && (state_checkerR <= analogRead(pot_pinR)+pot_sens && state_checkerR >= analogRead(pot_pinR)-pot_sens))
+     { 
+       //Debugger
+//       Serial.print("HOLDING left----------");
+//       Serial.print(state_checkerL);
+//       Serial.print("\t");
+//       Serial.print(analogRead(pot_pinL));
+//       Serial.print("--left\r\n");
+     }
+  
+   }
+   
+
+    //---------------------------------------------------Right Servo
+
+  state_checkerL=analogRead(pot_pinL); //assign potentiometer value for the left potentiometer to state_chekerL
+  
+   //checks the current value of LEFT potentiometer against
+   //the last value and keeps in loop until change occurs. pot_sens allows room for switch bounce
+  while(state_checkerL <= analogRead(pot_pinL)+pot_sens && state_checkerL >= analogRead(pot_pinL)-pot_sens)     
+  {   
+     voltR = analogRead(pot_pinR);            //assign potentiometer value to voltR = 0 to 1024 (10-bit ADC)
+     potR = ((voltR/512.00)*1000)+511;        //calculate high pulse width in microseconds, values between 511 to 2511
+     digitalWrite(pwm_pinR, HIGH);            //set pwm pin high
+     delayMicroseconds(potR);                 //set time delay for calculated value held in potR
+     digitalWrite(pwm_pinR, LOW);             //set pwm pin low
+     rem_periodR = 2000-potR;                 //calculate pwm pin low time delay
+     delayMicroseconds(rem_periodR);          //set time delay for calculated value held in rem_periodR
+
+     //Debugger
+//     Serial.print("MOVING right----------");
+//     Serial.print(potR);
+//     Serial.print("\t");
+//     Serial.print(rem_periodR);
+//     Serial.print("--right\r\n");
+
+     state_checkerL=analogRead(pot_pinL);    //assign potentiometer value to state checker
+     state_checkerR=analogRead(pot_pinR);    //assign potentiometer value to state checker
+
+      //checks LEFT AND RIGHT potentiometer values and keeps in loop until change occurs
+     while((state_checkerL <= analogRead(pot_pinL)+pot_sens && state_checkerL >= analogRead(pot_pinL)-pot_sens) 
+        && (state_checkerR <= analogRead(pot_pinR)+pot_sens && state_checkerR >= analogRead(pot_pinR)-pot_sens))
+     { 
+        //debugger
+//       Serial.print("HOLDING right----------");
+//       Serial.print(state_checkerR);
+//       Serial.print("\t");
+//       Serial.print(analogRead(pot_pinR));
+//       Serial.print("--right\r\n");   
+     }  
+  }
+  
+  state_checkerR=analogRead(pot_pinR);  //assign potentiometer value for the right potentiometer to state_chekerR
+
+   //----reset variables back to zero----\\
+   potL=0;
+   rem_periodL=0;
+   potR=0;
+   rem_periodR=0;
+}
+
+```  
+
+		Video clip
 [![](https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/servo_cardboard_YT_pic.png?raw=true)](https://www.youtube.com/watch?v=nrsmyMrSH78)
 
 <br><br><br>
