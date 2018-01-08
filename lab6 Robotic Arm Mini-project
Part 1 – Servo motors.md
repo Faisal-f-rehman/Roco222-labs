@@ -66,7 +66,7 @@ YELLOW wire = PWM
 		Arduino Code
 Although there is a library for the servo in arduino which makes things lot simpler, we decided to do this lab by writing the code without the library, to try and understand whats going on between the servo and the Arduino.
 
-*calculations*
+*calculations*  
 Period(Total) = 1/frequency(f) = 1/0.2 = 5sec = 5000ms
 Period(T) per cycle = 20ms
 Total steps available = 5000/20 = 250 steps
@@ -76,7 +76,7 @@ Incrments = Highest range/half steps = (2000-700)/125 = 1300/125 = 10.4
 Decrements =  Highest range/half steps =((2000-10)-800)/124 = (1990-800)/124 = 1190/124 = 9.6
 
 		Arduino Code
-***c
+```c
 
 #define pwm_pin 9
 
@@ -131,7 +131,7 @@ void PWM (void)
 //    Serial.println(pwm_off);
   }
  }
-***
+```
 
 <br><br>
 
@@ -139,7 +139,7 @@ void PWM (void)
 **Wire the provided potentiometer to one of the Arduino analog port. Write a program that reads the value of the potentiometer and writes it onto the serial port. Use the potentiometer to rotate the servo-motor**
 
 		Wire up connections
-*components*
+*components*  
 Arduino UNO
 Potentiometer
 Servo
@@ -151,7 +151,7 @@ source: [www.electroschematics.com](http://www.electroschematics.com/wp-content/
 		Arduino code
 This code is written for 2 servos controlled by 2 potentiometers connected to arduino uno
 
-***c
+```c
 
 //---Pin assignments to names---//
 #define pot_pinL 5        //for left potentiometer
@@ -284,7 +284,7 @@ void pot_servo_control(void)
    rem_periodR=0;
 }
 
-***
+```
 
 		Video clip
 [![](pic)](video)
