@@ -55,7 +55,82 @@ Assembly was a massive task, Spencer had to reprint a few parts since the printe
  
 <br>
 
-		SECTION - 4 SERVO MOTOR COTROL THROUGH TERMINAL
+		SECTION - 4 SERVO MOTOR CONTROL THROUGH TERMINAL (ROS)
+
+In this section we control a servo motor through ROS in linux terminal, connected to arduino uno. Connections are very simple and same as the ones in lab6.  
+
+### CONNECTIONS
+
+![Step1 connections](https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/direct_servo_to_arduino.png?raw=true)   
+
+### ARDUINO CODE & ROS
+
+**ARDUINO**
+```C
+#include <ros.h>
+#include <std_msgs/UInt16.h>
+#include <Servo.h>
+
+using namespace ros;
+
+NodeHandle nh;
+Servo servo;
+
+void cb( const std_msgs::UInt16& msg){
+  servo.write(msg.data); // 0-180
+}
+
+Subscriber<std_msgs::UInt16> sub("servo", cb);
+
+void setup(){
+  nh.initNode();
+  nh.subscribe(sub);
+
+  servo.attach(9); //attach it to pin 9
+}
+
+void loop(){
+  nh.spinOnce();
+  delay(1);
+}
+```
+
+**ROS**
+
+```python
+roscore
+rosrun rosserial_python serial_node.py /dev/ttyACM0
+rostopic pub --once servo std_msgs/UInt16 110
+```
+**CODE EXPLAIATION**
+
+The last line of ROS 
+```python 
+rostopic pub --once servo std_msgs/UInt16 <0 to 180>
+```
+once written on the terminal publishes a topic called servo of type std_msgs, where Uint16 is the name and the maximum size of the message, in this instance it is an unsigned integer of size 16bits (0 to 65536). 
+
+<br>
+
+Then in arduino's line of code 
+```C 
+Subscriber<std_msgs::UInt16> sub("servo", cb);
+```
+we subscribe (read from), the topic servo of type std_msgs, size 16bit variable of type unsigned integer and calls the function called cb(argument);
+
+<br>
+
+The cb(argument) function is called the callback function
+```c
+void cb( const std_msgs::UInt16& msg){
+  servo.write(msg.data); // 0-180
+}
+```
+The argument of this function is then assigned the value subscribed from the std_msgs which is then sent to the servos by the following command:
+
+```C
+servo.write(msg.data); // 0-180
+```
 
 
 <br><br><br>
