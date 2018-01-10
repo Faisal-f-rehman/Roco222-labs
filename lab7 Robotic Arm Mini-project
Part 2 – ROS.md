@@ -29,7 +29,7 @@ This lab covers sections 2 to 6 from the following list:
 6) 3D motion planning and finalisation
 
 ----------------------------------------------
-		SECTION 2 - 3D DESIGN & PRINTING
+SECTION 2 - 3D DESIGN & PRINTING
 ----------------------------------------------
 
 Initial design was to include a motor for every joint. It included stepper and servo motors.
@@ -49,7 +49,7 @@ However during our sketches Jake pointed out that there is a way to have most se
 <br>
 
 ----------------------------------------------
-		SECTION 3 - ASSEMBLING THE ARM
+SECTION 3 - ASSEMBLING THE ARM
 ----------------------------------------------
 
 Assembly was a massive task, Spencer had to reprint a few parts since the printer percision is +-1.5mm, which makes a lot difference than one would expect, since the servos and other printed parts had to fit in tightly. After a few attempts and sleepless nights for Spencer, we managed to assemble the arm. However after the assembly, we realised how top heavy the arm was for the small hobby servos. To compensate for the weight we had to include a few rubber bands, although they were a bit of an eye sore, they did the job.
@@ -60,7 +60,7 @@ Assembly was a massive task, Spencer had to reprint a few parts since the printe
 <br>
 
 ----------------------------------------------
-		SECTION - 4 SERVO MOTOR CONTROL THROUGH TERMINAL (ROS)
+SECTION - 4 SERVO MOTOR CONTROL THROUGH TERMINAL (ROS)
 ----------------------------------------------
 
 In this section we control a servo motor through ROS in linux terminal, connected to arduino uno. Connections are very simple and same as the ones in lab6.  
@@ -144,7 +144,9 @@ servo.write(msg.data); // 0-180
 
 <br><br>
 
-		SECTION 5 RVIZ 3D SIMULATION, WRITTEN IN URDF (XML FORMAT)
+----------------------------------------------
+SECTION 5 RVIZ 3D SIMULATION, WRITTEN IN URDF (XML FORMAT)
+----------------------------------------------
 
 In this section we control one servo through simulation of one joint in Rviz written in URDF and C/C++ Arduino
 
@@ -235,10 +237,10 @@ The GUI interface is the joint\_state\_publisher that publishes msgs that are th
 
 For Rviz simulation there is another node called the robot\_state\_publisher that subscribes from the topic /joint_states and broadcasts the corresponding transformation frames(tf frames).
 
-----------------------
+
 tf is a package that lets the user keep track of multiple coordinate frames over time. tf maintains the relationship between coordinate frames in a tree structure buffered in time, and lets the user transform points, vectors, etc between any two coordinate frames at any desired point in time.
 source:[http://wiki.ros.org/tf](http://wiki.ros.org/tf)
-----------------------
+
 
 <br>
 
@@ -257,8 +259,9 @@ void cb( const sensor_msgs::JointState& msg){
 
 <br><br>
 
-		
-		SECTION 6 3D MOTION PLANNING AND FINALISATION
+----------------------------------------------		
+SECTION 6 3D MOTION PLANNING AND FINALISATION
+----------------------------------------------
    
 In this section we are going to take everything that we have learnt and apply it to our own robotic arm.
 
