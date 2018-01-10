@@ -28,7 +28,9 @@ This lab covers sections 2 to 6 from the following list:
 5) Rviz 3D simulation, written in URDF (XML format)
 6) 3D motion planning and finalisation
 
+----------------------------------------------
 		SECTION 2 - 3D DESIGN & PRINTING
+----------------------------------------------
 
 Initial design was to include a motor for every joint. It included stepper and servo motors.
 
@@ -46,7 +48,9 @@ However during our sketches Jake pointed out that there is a way to have most se
 
 <br>
 
+----------------------------------------------
 		SECTION 3 - ASSEMBLING THE ARM
+----------------------------------------------
 
 Assembly was a massive task, Spencer had to reprint a few parts since the printer percision is +-1.5mm, which makes a lot difference than one would expect, since the servos and other printed parts had to fit in tightly. After a few attempts and sleepless nights for Spencer, we managed to assemble the arm. However after the assembly, we realised how top heavy the arm was for the small hobby servos. To compensate for the weight we had to include a few rubber bands, although they were a bit of an eye sore, they did the job.
 
@@ -55,7 +59,9 @@ Assembly was a massive task, Spencer had to reprint a few parts since the printe
  
 <br>
 
+----------------------------------------------
 		SECTION - 4 SERVO MOTOR CONTROL THROUGH TERMINAL (ROS)
+----------------------------------------------
 
 In this section we control a servo motor through ROS in linux terminal, connected to arduino uno. Connections are very simple and same as the ones in lab6.  
 
@@ -134,7 +140,7 @@ servo.write(msg.data); // 0-180
 
 ### Video
 
-![[](https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/servo_terminalYT.png?raw=true)](https://www.youtube.com/watch?v=QK5xhgdjI3A)
+[![](https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/servo_terminalYT.png?raw=true)](https://www.youtube.com/watch?v=QK5xhgdjI3A)
 
 <br><br>
 
@@ -247,7 +253,7 @@ void cb( const sensor_msgs::JointState& msg){
 
 ### Video 
 
-![[](https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/servo_single_rviz_YT.png?raw=true)](https://www.youtube.com/watch?v=6OjYXSEfVJ4)
+[![](https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/servo_single_rviz_YT.png?raw=true)](https://www.youtube.com/watch?v=6OjYXSEfVJ4)
 
 <br><br>
 
@@ -909,7 +915,7 @@ void loop(){
 
 ### Video Demonstration
 
-![[](https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/arm_bot_ROS_YT.png?raw=true)](https://www.youtube.com/watch?v=Z4pNaspH2g0)
+[![](https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/arm_bot_ROS_YT.png?raw=true)](https://www.youtube.com/watch?v=Z4pNaspH2g0)
 
 
 <br><br><br>
