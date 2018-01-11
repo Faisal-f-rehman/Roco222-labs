@@ -133,8 +133,118 @@ The delay(__) function is library added function thats just a loop keeping the p
 
 ## Controlling your DC motor in closed-loop
 
-Unfortunately since our motor was not capable of doing this task we could not demonstrate this part of the lab.
+Unfortunately our motor was not capable of doing this task so we could not demonstrate this part of the lab. However we did write a code on Arduino for it:
 
+**ARDUINO**
+*DC MOTOR CLOSED LOOP CONTROL*
+
+```C
+#define TARGET_SPEED 100      //set target speed between 0 to 255
+
+const byte ledPin = 13;
+const byte interruptPin = 2;
+volatile byte state = LOW;
+unsigned long i = 0;
+unsigned long time_bank[99];
+unsigned long new_time = 0;
+float rpm = 0.00;
+float total_time_per_cycle = 0.00;
+float time_per_cycle = 0.00;
+byte PWM = 0;
+
+
+void setup() 
+{
+  //MOTOR
+  pinMode(12, OUTPUT);         //Initiates Motor Channel A pin
+  pinMode(9, OUTPUT);         //Initiates Brake Channel A pin
+
+  //Encoder
+  pinMode(ledPin, OUTPUT);                              //set onboard led, pin 13 to output
+  pinMode(interruptPin, INPUT);                         //set pin 2, interrupt pin as input
+  Serial.begin(9600);                                   //baudrate 9600 
+  
+  // configure the interrupt call-back: blink is called everytime the pin
+  // goes from low to high.
+
+  attachInterrupt(digitalPinToInterrupt(interruptPin), blink, CHANGE);
+}
+
+void loop()
+{
+  //ENCODER
+  digitalWrite(ledPin, state);                          //initialise pin 13 (onboard led)as LOW 
+  pwmHandler(TARGET_SPEED);
+  
+}
+//---------------END OF PROGRAMME--------------------\\
+
+
+
+//-------------------FUNCTIONS------------------------\\
+
+void blink()
+{ 
+  if(state = !state)                                    //enter if rotation is complete
+  { 
+    int u = 0;
+    i++;
+    new_time = micros();                                //assign current time to new_time
+    time_bank[i] = new_time;                            //store current time in the array time_bank
+    time_per_cycle = time_bank[i]-time_bank[i-1];       //assign time difference between last pulse and current pulse detected
+    total_time_per_cycle += time_per_cycle*0.000001*60; //convert time difference from micro-seconds to minutes and add to the total time taken for the rotations so far 
+    rpm = float(i/total_time_per_cycle);                //divide total rotations(pulses) by total time to get rotations per minute RPM 
+
+    if(i>98)                                            //reset rotaions counted back to zero
+    {
+      i=0;
+    }
+    
+    Serial.println(i);                                  //print number of rotations to serial port
+    Serial.println(total_time_per_cycle);               //print total time taken for the rotations so far to serial port
+    Serial.println(rpm,2);                              //print speed(RPM) to 2 decimal points
+  }
+  new_time=0;                                           
+  rpm = 0.00;
+  
+}
+
+
+void pwmHandler (byte target_speed)
+{ 
+  unsigned short error = 0;
+  unsigned short rpm_scaled = 0;
+  //Assuming max rpm = 2000, scale it down to 255
+  rpm_scaled = rpm/7.843; //rpm_scaled at max = 2000/7.843 = 255
+  
+  //error signal
+  error = target_speed + (rpm_scaled-target_speed); //adjust speed from feedback
+  if(error<=0){error = 0;}                           //make sure speed is positive
+  
+    //MOTOR
+  digitalWrite(12, HIGH); //Establishes forward direction of Channel A
+  digitalWrite(9, LOW);   //Disengage the Brake for Channel A
+
+  if(PWM >= error)          //Enter if statement to turn motor off
+  {
+    analogWrite(3, 0);      //turn motor off
+    digitalWrite(9, HIGH);  //Engage the Brake for Channel A
+    PWM++;
+  }
+  else
+  {
+    analogWrite(3, 255);    //motor at full speed
+    digitalWrite(9, HIGH);  //Engage the Brake for Channel A
+    PWM++;
+  }
+  if (PWM >= 255)           //PWM duty cycle set at 0 to 255
+  {
+   PWM = 0;
+  }
+}
+
+
+```
 <br><br><br>
 
 		Lab 5 Stepper motors

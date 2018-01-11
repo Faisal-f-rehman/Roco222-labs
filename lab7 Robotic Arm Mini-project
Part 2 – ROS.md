@@ -52,7 +52,7 @@ However during our sketches Jake pointed out that there is a way to have most se
 SECTION 3 - ASSEMBLING THE ARM
 ----------------------------------------------
 
-Assembly was a massive task, Spencer had to reprint a few parts since the printer percision is +-1.5mm, which makes a lot difference than one would expect, since the servos and other printed parts had to fit in tightly. After a few attempts and sleepless nights for Spencer, we managed to assemble the arm. However after the assembly, we realised how top heavy the arm was for the small hobby servos. To compensate for the weight we had to include a few rubber bands, although they were a bit of an eye sore, they did the job.
+Assembly was a massive task, Spencer had to reprint a few parts since the printer percision is +-1.5mm, and that makes a lot more difference than one would expect, since the servos and other printed parts had to fit in tightly. After a few attempts and sleepless nights for Spencer, we managed to assemble the arm. However after the assembly, we realised how top heavy the arm was for the small hobby servos. To compensate for the weight we had to include a few rubber bands, although they were a bit of an eye sore, they did the job.
 
 <img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/physical_assembly_1.jpeg?raw=true" height="50%" width="50%"/><img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/physical_assembly_2.jpeg?raw=true" height="50%" width="50%"/>
 <img src="https://github.com/Faisal-f-rehman/pics.vids/blob/master/arm_bot_media/physical_assembly_3.jpeg?raw=true" height="50%" width="50%"/>
