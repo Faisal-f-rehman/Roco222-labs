@@ -18,10 +18,108 @@
 
 [Lab7 Robotic Arm Mini-project Part 2 – ROS](https://github.com/Faisal-f-rehman/Roco222-labs/blob/master/lab7%20Robotic%20Arm%20Mini-project%0APart%202%20%E2%80%93%20ROS.md)
 
-# **Lab5**
+# **Lab5 Stepper Motors**
 
+The Aims of this lab are as follows:
 
++ Wiring of a bipolar or unipolar stepper motor
++ Different operation modes of a stepper motor and their main characteristics (Full Step, Half Step & Micro Step)
++ Programming a stepper motor controller for the Arduino
 
+### Stepper Motor Types
+
+Stepper motors are synchronous electric motors. There are three main types of stepper motors:  
+
+1) Variable reluctance stepper motors (Rotor has teeth and is made of ferromagnetic material)  
+2) Permanent magnet stepper motors (Rotor does not have teeth but is made of permanent magnets with magnetic poles)  
+3) Hybrid stepper motors (Rotor has both teeth and is made of permanent magnets with magnetic poles) *used in lab*  
+
+<br><br>
+
+### Wiring of a bipolar or unipolar stepper motor
+
+#### Bipolar vs Unipolar
+
+The difference between bipolar and unipolar stepper motors is the circuit wiring. The bipolar motors have 4 wires coming out of the motor and the unipolar motor can have 5 to 6. Unipolar motors have a center tap between two windings and are either brought outside the motor
+separately or connected together and brought outside as one wire.
+
+![uni vs bipolar](http://89.22.98.13/pylog/cnt/projects/shapeoko/_img/stepper/stepper.png)
+image source: [Plog](http://89.22.98.13/pylog/pylog.py?disp=cnt/projects/shapeoko/Turn+a+unipolar+into+a+bipolar+steper.txt)
+
+<br>
+
+In this lab we will be using a 4 pole unipolar hybrid stepper motor as a bipolar hybrid stepper motor. This can be done with a 6 wire unipolar motor however a 5 wire unipolar motor has a connection between the wires inside the motor and to use a 5 wire unipolar motor as a bipolar motor we would have to disconnect the connection inside.
+
+![stepper motor wiring](https://github.com/Faisal-f-rehman/pics.vids/blob/master/stepper_motors/stepper%20wiring.png?raw=true)
+ 
+<br><br>
+
+### Different operation modes of a stepper motor and their main characteristics
+
+Stepper motors work in a very different way to brushed DC motors. The best way to understand how stepper motors work is to look at the simplest type, *Variable Reluctance Stepper Motor* which has teeth on the rotar and the stator (around the rotar) has electromagnets. The electromagnets have windings to allow north and south pole on the opposite ends. If we have 3 electromagnets on the stator with 4 teeth on the rotar, it looks like this:
+
+<img src="https://cdn.instructables.com/FBS/BHKW/JAYJ46JT/FBSBHKWJAYJ46JT.MEDIUM.jpg" height="50%" width="50%"/><img src="https://www.amci.com/index.php/download_file/view_inline/2440/" height="50%" width="50%"/>
+image source: [www.cdn.instructables.com](https://cdn.instructables.com/FBS/BHKW/JAYJ46JT/FBSBHKWJAYJ46JT.MEDIUM.jpg)	image source: [www.amci.com](https://www.amci.com/index.php/download_file/view_inline/2440/) 
+
+When the current is applied to only electromagnet(EM) 1 the teeth on the rotar aligns' with the EM1, after this if current is applied to only EM2 the rotar will move to align the teeth with EM2. This type of operation is called *full step* and with our configuration ie 3 electromagnets and 4 teeth, this gives us a 30 degrees of movement per step.  
+
+If the current is applied to 2 electromagnetic poles the teeth aligns in the center of the two poles after this if we turn the pole, we are moving away from, off it will align with the only pole that is energised. This type of operation gives more percision than *full step* but less speed, and is called *half step* operation. The half-step with our configuration give a 15 degrees turn per step.  
+
+In *full-step* and *half-step* operations the movement can be jerky, to make smoother turns we can use *micro-stepping*. This can be achieved by sending a sinewave to the electromagnet we are moving to and a cosine wave to that we are moving from, at the same time. Since they are both 90 degrees (Pi/2 radians) out of phase, while the current gradually decreases in the EM we are moving from, the current gradually increases in the EM we are moving to.This is done by Pulse Width Modulation (PWM) as the duty cycle of the signal of one winding is decreased the duty cycle of the signal of other winding is increased. 
+
+![sine-cosine](https://github.com/Faisal-f-rehman/pics.vids/blob/master/stepper_motors/sine-cosine.png?raw=true)
+image source: lecture notes 
+
+<br><br>
+
+### Programming a stepper motor controller for the Arduino
+
+**FULL_STEP**
+
+				ARDUINO CODE
+```C
+#define DIR_A 12
+#define PWM_A 3
+#define DIR_B 13
+#define PWM_B 11
+
+const int delayMs = 1;
+
+void setup() {
+pinMode(DIR_A, OUTPUT);
+pinMode(DIR_B, OUTPUT);
+
+pinMode(9, OUTPUT); digitalWrite(9, LOW); //No braking ch. A
+pinMode(8, OUTPUT); digitalWrite(8, LOW); //No braking ch. B
+}
+
+void loop()
+{
+  digitalWrite(DIR_A, HIGH); // Ch. A forward
+  digitalWrite(DIR_B, HIGH); // Ch. B forward
+  analogWrite(PWM_A, 255); // Ch. A on
+  analogWrite(PWM_B, 0); // Ch. B off
+  delay(delayMs);
+  
+  analogWrite(PWM_A, 255); // Ch. A on
+  analogWrite(PWM_B, 0); // Ch. B off
+  delay(delayMs);
+  
+  digitalWrite(DIR_A, LOW); // Ch. A backwards
+  digitalWrite(DIR_B, LOW); // Ch. B backwards
+  analogWrite(PWM_A, 0); // Ch. A off
+  analogWrite(PWM_B, 255); // Ch. B on
+  delay(delayMs);
+
+  analogWrite(PWM_A, 255); // Ch. A on
+  analogWrite(PWM_B, 0);// Ch. B off
+  delay(delayMs);
+}
+```
+
+*FULL STEP VIDEO CLIP*
+
+[![](https://github.com/Faisal-f-rehman/pics.vids/blob/master/stepper_motors/full-step%20reverse%20stepper.png?raw=true)](https://www.youtube.com/watch?v=yOyhpsQ9kdk&feature=youtu.be) 
 
 <br><br><br>
 

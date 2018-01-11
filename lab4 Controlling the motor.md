@@ -133,23 +133,7 @@ The delay(__) function is library added function thats just a loop keeping the p
 
 ## Controlling your DC motor in closed-loop
 
-**Step 1 – Get your DC motor to rotate**  
-
-Now, replace the small provided DC motor by your own motor. You might need to provide more current: use
-the lab power supply to power the motor shield, but set the maximum current to 2A and do not exceed 12V,
-otherwise you will damage the motor shield.  
-
-**Step 2 – Close the loop**  
-
-Using your encoder and the Arduino program you wrote last week to read the speed, write a new program that
-allow to set the desired speed of the motor in RPM, and accordingly control the motor.
-
-
-
-
-
-
-
+Unfortunately since our motor was not capable of doing this task we could not demonstrate this part of the lab.
 
 <br><br><br>
 
