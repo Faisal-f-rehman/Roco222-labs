@@ -121,6 +121,121 @@ void loop()
 
 [![](https://github.com/Faisal-f-rehman/pics.vids/blob/master/stepper_motors/full-step%20reverse%20stepper.png?raw=true)](https://www.youtube.com/watch?v=yOyhpsQ9kdk&feature=youtu.be) 
 
+<br><br>
+
+**HALF-STEP**
+```C
+
+-----------Half Step-----------------------------
+
+
+#include <Stepper.h>
+
+const int stepsPerRevolution = 400;  // This is for number of steps per revolution (200/0.5 = 400 Steps)
+                                    
+
+// initialize the stepper library on pins 8 through 13:
+Stepper myStepper(stepsPerRevolution, 13,12,8,9);
+
+int stepCount = 0;         // number of steps the motor has taken
+
+void setup() {
+  // initialize the serial port:
+  Serial.begin(9600);
+}
+
+void loop() {
+  if (stepCount < stepsPerRevolution) { 
+    // step one step:
+    myStepper.step(1);
+    Serial.print("steps:" );
+    Serial.println(stepCount);
+    stepCount++;
+    delay(500);
+  }
+}
+
+  
+}
+```
+
+<br>
+
+**MICRO-STEPPING**
+
+```C
+//-----------Micro Stepping Code example-----------------------------
+
+//----------Define and Initialisation of Variables-------------------
+
+int microsteps =200; /Micro Steps for step
+float amp = 255; // Output scaling
+int pulseDelay = 10; Microseconds between wrire
+int a[200];
+int b[200];
+int idxG;
+
+//-----------Set Output Index-----------------------------------------
+
+void setup() {
+  int idx;
+
+  Serial begin(9600); //Serial port initialisation
+  idxG=0; //Initialise O/P index
+
+//---------------Sine and Cos Array (Table build)---------------------
+
+  for (idx-0 ; idx <microsteps; idx++) {
+    a[idx] = amp * sin(idx * 2 * PI /microstep);
+    b[idx] = amp * cos(idx * 2 * PI /microstep);
+  }
+
+//---------Set Pin Functions with Motor Shield Outputs----------------
+
+    pinMode(13, OUTPUT);
+    pinMode(12, OUTPUT);
+    pinMode(8, OUTPUT);
+    pinMode(9, OUTPUT);
+
+//---------- take breaks off-------------------------------------------
+
+    digitalWrite(8, LOW);
+    digitalWrite(9, LOW);
+  }
+
+//----------------Use sign of value to Set output Direction and 0-255 to PWM only-------------------
+
+//Write to Specified Stepper Channel
+
+  void WriteValue(int value, int chaAnalog, int chanDigit)
+  {
+    int valueAbs = abs(value); 		// Get absolute value
+    analogWrite(chanAnalog, value); 	//Write Absolute value as PWM
+    if (value > 0) { 			//Set pos Direction
+      digitalWrite(chanDigit, HIGH);
+    }
+    else{
+      digitalWrite(chanDigit, LOW);	// Set Neg direction
+    }
+  }
+ 
+  void loop() {
+    WriteValue(a[idxG], 2, 12); / Write out Sin A and Cos B Values
+    WriteValue(a[idxG], 2, 12);
+
+  idxG++; // Index Update	
+  if (idxG == microsteps) { 
+    idxG = 0;
+  }
+  delayMicroseconds(pulseDelay); // Wait Delay
+
+}
+
+```
+
+
+
+
 <br><br><br>
 
 		Lab 6 servo motors mini-project
