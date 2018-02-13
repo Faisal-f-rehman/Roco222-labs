@@ -1,0 +1,8 @@
+prefix=/home/faisal/dev
+
+Name: arm_bot
+Description: Description of arm_bot
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/faisal/dev/lib 
+Requires: 

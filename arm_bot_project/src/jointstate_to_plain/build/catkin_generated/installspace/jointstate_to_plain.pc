@@ -1,0 +1,8 @@
+prefix=/home/faisal/dev
+
+Name: jointstate_to_plain
+Description: Description of jointstate_to_plain
+Version: 0.0.0
+Cflags: -I/home/faisal/dev/include
+Libs: -L/home/faisal/dev/lib 
+Requires: 

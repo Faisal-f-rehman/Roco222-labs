@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+  <name>arm_bot</name>
+  <version>0.0.1</version>
+  <description>The arm_bot package</description>
+
+  <maintainer email="faisal@todo.todo">faisal</maintainer>
+
+
+  <license>BSD</license>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>robot_state_publisher</build_depend>
+  <build_depend>roslaunch</build_depend>
+  <build_depend>rviz</build_depend>
+  <build_depend>xacro</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>urdf</build_depend>
+
+</package>

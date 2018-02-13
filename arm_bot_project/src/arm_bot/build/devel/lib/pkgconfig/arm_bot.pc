@@ -1,0 +1,8 @@
+prefix=/home/faisal/roco222/arm_project/arm_bot_project/src/arm_bot/build/devel
+
+Name: arm_bot
+Description: Description of arm_bot
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/faisal/roco222/arm_project/arm_bot_project/src/arm_bot/build/devel/lib 
+Requires: 

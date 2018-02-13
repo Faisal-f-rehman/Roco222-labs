@@ -1,0 +1,20 @@
+/home/faisal/dev/_setup_util.py
+/home/faisal/dev/env.sh
+/home/faisal/dev/setup.bash
+/home/faisal/dev/setup.sh
+/home/faisal/dev/setup.zsh
+/home/faisal/dev/.rosinstall
+/home/faisal/dev/lib/pkgconfig/arm_bot.pc
+/home/faisal/dev/share/arm_bot/cmake/arm_botConfig.cmake
+/home/faisal/dev/share/arm_bot/cmake/arm_botConfig-version.cmake
+/home/faisal/dev/share/arm_bot/package.xml
+/home/faisal/dev/share/arm_bot/meshes/Claw base.STL
+/home/faisal/dev/share/arm_bot/meshes/base_plate.STL
+/home/faisal/dev/share/arm_bot/meshes/main_base.STL
+/home/faisal/dev/share/arm_bot/meshes/elbow_base.STL
+/home/faisal/dev/share/arm_bot/meshes/servo/servo.STL
+/home/faisal/dev/share/arm_bot/meshes/servo/servo bit only.STL
+/home/faisal/dev/share/arm_bot/meshes/servo/servo with bit.STL
+/home/faisal/dev/share/arm_bot/meshes/elbow_ver_link.STL
+/home/faisal/dev/share/arm_bot/launch/display.launch
+/home/faisal/dev/share/arm_bot/urdf/arm_bot.urdf

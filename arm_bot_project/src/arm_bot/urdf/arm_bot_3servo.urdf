@@ -1,0 +1,478 @@
+<?xml version="1.0"?>
+
+				<!--...........LINKS Layout: Bottom Up............-->
+<robot name="arm_bot">
+
+<!--base link-->
+	<link name="base_link">
+		<visual>
+			<geometry>
+				<cylinder length="0.03" radius="0.1"/>
+			</geometry>
+		</visual>
+	</link>
+
+<!--main base-->
+	<link name="main_base">
+		<visual>
+			<origin rpy="-1.5708 0 0" xyz="0 0 0.015"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/main_base.STL"/>
+				<!--mesh filename="file:///home/faisal/roco222/arm_project/models/meshes/main_base.STL"/-->
+			</geometry>			
+		</visual>
+	</link>
+
+<!--1st servo base plate-->
+	<link name="base_plate_servo">
+		<visual>
+			<origin rpy="1.5708 0 3.14" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/servo/servo.STL"/>
+			</geometry>			
+		</visual>
+	</link>
+
+<!--base plate-->
+	<link name="base_plate">
+		<visual>
+			<origin rpy="-1.5708 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/base_plate.STL"/>
+			</geometry>			
+		</visual>
+	</link>
+
+<!--elbow base-->
+	<link name="elbow_base">
+		<visual>
+			<origin rpy="1.5708 0 0" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/elbow_base.STL"/>
+			</geometry>			
+		</visual>
+	</link>
+
+<!--2nd servo elbow vertical left-->
+	<link name="servo_elbow_vertical_left">
+		<visual>
+			<origin rpy="0 -1.5708 -1.5708" xyz="0.04 0 0"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/servo/servo.STL"/>
+			</geometry>			
+		</visual>
+	</link>
+
+<!--3rd servo elbow vertical right-->
+	<link name="servo_elbow_vertical_right">
+		<visual>
+			<origin rpy="0 -1.5708 1.5708" xyz="-0.04 0 0"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/servo/servo.STL"/>
+			</geometry>			
+		</visual>
+	</link>
+
+<!--elbow vertical-->
+	<link name="elbow_vertical">
+		<visual>
+			<origin rpy="1.5708 0 3.14" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/elbow_ver_link.STL"/>
+			</geometry>			
+		</visual>
+	</link>
+
+<!--top bit of elbow vertical-->
+	<link name="elbow_vertical_top">
+		<visual>
+			<origin rpy="1.5708 0 0" xyz="0 0 0.073"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/elbow_ver_top.STL"/>
+			</geometry>			
+		</visual>
+	</link>
+
+<!--double bearings for elbow to wrist-->
+	<!--link name="double_bearing_1">
+		<visual>
+			<origin rpy="1.5708 1.5708 0" xyz="0.053 0 0"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/bearing.STL"/>
+			</geometry>			
+		</visual>
+
+		<visual>
+			<origin rpy="1.5708 1.5708 0" xyz="-0.063 0 0"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/bearing.STL"/>
+			</geometry>			
+		</visual>
+	</link-->
+
+<!--longer shaft-->
+	<!--link name="longer_shaft">
+		<visual>
+			<origin rpy="0 0 1.5708" xyz="0.068 0 0"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/elbow_to_wrist_shaft.STL"/>
+			</geometry>			
+		</visual>
+	</link-->
+
+<!--vertical wrist-->
+	<!--link name="wrist_vertical">
+		<visual>
+			<origin rpy="1.5708 0 0" xyz="0 0 -0.01"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/wrist_ver.STL"/>
+			</geometry>			
+		</visual>
+	</link-->
+
+<!--control arm shaft-->
+	<!--link name="control_arm_shaft">
+		<visual>
+			<origin rpy="0 0 1.5708" xyz="0.045 0 0"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/control_arm_shaft.STL"/>
+			</geometry>			
+		</visual>
+	</link-->
+
+<!--4th servo, for control arm -->
+	<!--link name="servo_control_arm">
+		<visual>
+			<origin rpy="0 -1.5708 1.5708" xyz="0.015 0 0"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/servo/servo.STL"/>
+			</geometry>			
+		</visual>
+	</link-->
+
+<!--control arm fitter -->
+	<!--link name="fitter_control_arm">
+		<visual>
+			<origin rpy="0 -3 -1.5708" xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/control_arm_fitter.STL"/>
+			</geometry>
+		</visual>
+	</link-->
+
+						<!--control arm
+							<link name="control_arm">
+								<visual>
+									<origin rpy="1.5708 -1.5708 0" xyz="0 0.04 0.05"/>
+									<geometry>
+										<mesh filename="package://arm_bot/meshes/control_arm.STL"/>
+									</geometry>			
+								</visual>
+							</link>-->
+
+<!--5th servo, for claw base horizontal movement -->
+	<!--link name="servo_claw_base">
+		<visual>
+			<origin rpy="1.5708 0 0" xyz="-0.005 0 0"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/servo/servo.STL"/>
+			</geometry>			
+		</visual>
+	</link-->
+
+<!--claw base-->
+	<!--link name="claw_base">
+		<visual>
+			<origin rpy="0 3.14 0" xyz="0 -0.015 0"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/claw_base.STL"/>
+			</geometry>			
+		</visual>
+	</link-->
+
+<!--1st pair of double bearings for claw-->
+	<!--link name="double_bearing_L">
+		<visual>
+			<origin rpy="0 0 0" xyz="0 0.01 0"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/bearing.STL"/>
+			</geometry>			
+		</visual>
+
+		<visual>
+			<origin rpy="0 0 0" xyz="0 -0.02 0"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/bearing.STL"/>
+			</geometry>			
+		</visual>
+	</link-->
+
+<!--2nd pair of double bearings for claw-->
+	<!--link name="double_bearing_R">
+		<visual>
+			<origin rpy="0 0 0" xyz="0 0.01 0"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/bearing.STL"/>
+			</geometry>			
+		</visual>
+
+		<visual>
+			<origin rpy="0 0 0" xyz="0 -0.02 0"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/bearing.STL"/>
+			</geometry>			
+		</visual>
+	</link-->
+
+<!--Left claw-->
+	<!--link name="claw_L">
+		<visual>
+			<origin rpy="0 2.94 0" xyz="-0.015 -0.008 0.038"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/claw_finger.STL"/>
+			</geometry>			
+		</visual>
+	</link-->
+
+<!--Right claw-->
+	<!--link name="claw_R">
+		<visual>
+			<origin rpy="3.14 0.2 0" xyz="0.015 0.008 0.038"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/claw_finger.STL"/>
+			</geometry>			
+		</visual>
+	</link-->
+
+<!--6th servo, for claws-->
+	<!--link name="servo_claw">
+		<visual>
+			<origin rpy="0 0 0" xyz="-0.005 0 0"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/servo/servo.STL"/>
+			</geometry>			
+		</visual>
+	</link-->
+
+<!--6th servo,bit for claws-->
+	<!--link name="servo_bit">
+		<visual>
+			<origin rpy="0 0 0" xyz="0 0.015 0"/>
+			<geometry>
+				<mesh filename="package://arm_bot/meshes/servo/servo_bit_only.STL"/>
+			</geometry>			
+		</visual>
+	</link-->
+
+
+				<!--...........JOINTS Layout: Top down............-->
+
+
+<!--6th servo bit to servo-->	
+	
+	<!--joint name="claws" type="revolute">
+		<axis xyz="0 1 0" />
+		<limit effort="1000" lower="0.03" upper="0.64" velocity="0.5" />
+		<parent link="servo_claw"/>
+		<child link="servo_bit"/>
+		<origin xyz="-0.005 0 0" />
+	</joint-->
+
+<!--6th servo to claw base for claws-->	
+	
+	<!--joint name="servo_claws_open_close" type="fixed">
+		<parent link="claw_base"/>
+		<child link="servo_claw"/>
+		<origin xyz="0 0.017 0.003" />
+	</joint-->
+
+<!--left claw to bearing-->	
+	
+	<!--joint name="claw_L_to_claw_base" type="revolute">
+		<axis xyz="0 1 0" />
+		<limit effort="1000" lower="0" upper="3.14" velocity="0.5" />
+		<parent link="double_bearing_L"/>
+		<child link="claw_L"/>
+		<origin xyz="0 0 0" />
+		<mimic joint="claws" multiplier="1" offset="0"/>
+	</joint-->
+
+<!--right claw to bearing-->	
+	
+	<!--joint name="claw_R_to_claw_base" type="revolute">
+		<axis xyz="0 -1 0" />
+		<limit effort="1000" lower="0" upper="3.14" velocity="0.5" />
+		<parent link="double_bearing_R"/>
+		<child link="claw_R"/>
+		<origin xyz="0 0 0" />
+		<mimic joint="claws" multiplier="1" offset="0"/>
+	</joint-->
+
+<!--1st pair of double bearings to claw base-->	
+	
+	<!--joint name="bearing_claw_L" type="fixed">
+		<parent link="claw_base"/>
+		<child link="double_bearing_L"/>
+		<origin xyz="0.0425 0 0.005" />
+	</joint-->
+
+<!--2nd pair of double bearings to claw base-->	
+	
+	<!--joint name="bearing_claw_R" type="fixed">
+		<parent link="claw_base"/>
+		<child link="double_bearing_R"/>
+		<origin xyz="-0.0425 0 0.005" />
+	</joint-->
+
+<!--servo to claw base horiizontal-->	
+	
+	<!--joint name="claw_base_hoz" type="revolute">
+		<axis xyz="0 0 1" />
+		<limit effort="1000" lower="0" upper="3.14" velocity="0.5" />
+		<parent link="servo_claw_base"/>
+		<child link="claw_base"/>
+		<origin xyz="-0.005 0 0.025" />
+	</joint-->
+
+<!--servo vertical wrist to claw base horiizontal-->	
+	
+	<!--joint name="servo_ver_wrist_to_claw_base" type="fixed">
+		<parent link="wrist_vertical"/>
+		<child link="servo_claw_base"/>
+		<origin xyz="0 0 0.060" />
+	</joint-->
+
+					<!--control arm to ver wrist
+	
+						<joint name="control_arm_to_ver_wrist" type="continuous">
+							<axis xyz="1 0 0" />		
+							<parent link="control_arm_shaft"/>
+							<child link="control_arm"/>
+							<origin xyz="0 0 0" />
+							<mimic joint="wrist_ver" multiplier="1" offset="0"/>
+						</joint>-->
+
+					<!--control arm to fitter	
+	
+						<joint name="control_arm_to_fitter" type="continuous">
+							<axis xyz="1 0 0" />		
+							<parent link="fitter_control_arm"/>
+							<child link="control_arm"/>
+							<origin xyz="0 0 0" />
+							<mimic joint="wrist_ver" multiplier="1" offset="-0.4"/>
+						</joint>-->
+
+<!--control arm servo to elbow base-->	
+	
+	<!--joint name="wrist_ver" type="revolute">
+		<axis xyz="1 0 0" />
+		<limit effort="1000" lower="0" upper="1" velocity="0.5" />
+		<parent link="servo_control_arm"/>
+		<child link="fitter_control_arm"/>
+		<origin xyz="0 0 0" />
+	</joint-->
+
+<!--control arm servo to elbow base-->	
+	
+	<!--joint name="servo_CA_to_elbow_base" type="fixed">
+		<parent link="elbow_base"/>
+		<child link="servo_control_arm"/>
+		<origin xyz="0.021 0 0.085" />
+	</joint-->
+
+<!--control arm shaft-->	
+	
+	<!--joint name="control_arm_to_wrist_shaft" type="fixed">
+		<parent link="wrist_vertical"/>
+		<child link="control_arm_shaft"/>
+		<origin xyz="0 0 0.03" />
+	</joint-->
+
+<!--vertical wrist joint to elbow shaft-->	
+	
+	<!--joint name="wrist_ver_to_shaft" type="fixed">
+		<parent link="longer_shaft"/>
+		<child link="wrist_vertical"/>
+		<origin xyz="0 0 0" />
+	</joint-->
+
+<!--elbow to wrist shaft-->	
+	
+	<!--joint name="elbow_to_wrist" type="revolute">
+		<axis xyz="1 0 0"/>
+		<limit effort="1000" lower="0" upper="3.14" velocity="0.5" />	
+		<parent link="double_bearing_1"/>
+		<child link="longer_shaft"/>
+		<origin xyz="0 0 0" />
+		<mimic joint="wrist_ver" multiplier="1" offset="0.4"/>
+	</joint-->
+
+<!--elbow to wrist shaft bearings-->
+	<!--joint name="elbow_to_wrist_bearings" type="fixed">
+		<parent link="elbow_vertical_top"/>
+		<child link="double_bearing_1"/>
+		<origin xyz="0 0 0.1048" />
+	</joint-->
+
+<!--vertical elbow's top bit-->
+	<joint name="elbow_top" type="fixed">
+		<parent link="elbow_vertical"/>
+		<child link="elbow_vertical_top"/>
+		<origin xyz="0 0 0" />
+	</joint>
+
+<!--mimic 2nd & 3rd servo to vertical elbow link-->	
+	
+	<joint name="elbow_ver" type="revolute">
+		<axis xyz="1 0 0" />
+		<limit effort="1000" lower="0.02" upper="1.3" velocity="0.5" />
+		<parent link="servo_elbow_vertical_left"/>
+		<child link="elbow_vertical"/>
+		<origin xyz="0 0 0" />
+	</joint>
+
+<!--3rd servo to elbow base right-->
+	<joint name="3rd_servo_to_elbow_base" type="fixed">
+		<parent link="elbow_base"/>
+		<child link="servo_elbow_vertical_right"/>
+		<origin xyz="0 0 0.04" />
+	</joint>
+
+<!--2nd servo to elbow base left-->
+	<joint name="2nd_servo_to_elbow_base" type="fixed">
+		<parent link="elbow_base"/>
+		<child link="servo_elbow_vertical_left"/>
+		<origin xyz="0 0 0.04" />
+	</joint>
+
+<!--base plate to elbow base-->
+	<joint name="plate_to_elbow_base" type="fixed">
+		<parent link="base_plate"/>
+		<child link="elbow_base"/>
+		<origin xyz="0 0 0.01" />
+	</joint>
+
+
+<!--1st servo main base to base plate-->
+	<joint name="base_plate_hoz" type="revolute">
+		<axis xyz="0 0 1" />
+		<limit effort="1000" lower="0.1" upper="3.14" velocity="0.5" />
+		<parent link="base_plate_servo"/>
+		<child link="base_plate"/>
+		<origin xyz="0 0 0.022" />
+	</joint>
+
+<!--1st servo on main base-->
+	<joint name="servo_on_main_base" type="fixed">
+		<parent link="main_base"/>
+		<child link="base_plate_servo"/>
+		<origin xyz="0 0 0.030" />
+	</joint>
+
+<!--base link to main base-->
+	<joint name="base_to_main" type="fixed">
+		<parent link="base_link"/>
+		<child link="main_base"/>
+		<origin xyz="0 0 0.015" />
+	</joint>
+</robot>

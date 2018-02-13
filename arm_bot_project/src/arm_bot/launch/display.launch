@@ -1,0 +1,15 @@
+<launch>
+
+	<arg name="model" default="$(find arm_bot)/urdf/arm_bot.urdf"/>
+	<arg name="Dofs" default="$(find jointstate_to_plain)/nodes/run.py"/>
+	<arg name="gui" default="true" />
+
+	<param name="robot_description" textfile="$(arg model)" />
+	<param name="Dofs" textfile="$(arg Dofs)" />
+	<param name="use_gui" value="$(arg gui)"/>
+	<param name="rate" value="5"/>
+	
+	<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+	<node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+	<node name="rviz" pkg="rviz" type="rviz" required="true" />
+</launch>

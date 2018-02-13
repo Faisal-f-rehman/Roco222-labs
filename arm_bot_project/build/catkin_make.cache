@@ -1,0 +1,2 @@
+arm_bot
+-DCATKIN_DEVEL_PREFIX=/home/faisal/roco222/arm_project/arm_bot_project/devel -DCMAKE_INSTALL_PREFIX=/home/faisal/roco222/arm_project/arm_bot_project/install -G Unix Makefiles

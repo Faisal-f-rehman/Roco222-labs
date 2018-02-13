@@ -1,0 +1,8 @@
+prefix=/home/faisal/roco222/arm_project/arm_bot_project/src/jointstate_to_plain/build/devel
+
+Name: jointstate_to_plain
+Description: Description of jointstate_to_plain
+Version: 0.0.0
+Cflags: -I/home/faisal/roco222/arm_project/arm_bot_project/src/jointstate_to_plain/build/devel/include
+Libs: -L/home/faisal/roco222/arm_project/arm_bot_project/src/jointstate_to_plain/build/devel/lib 
+Requires: 

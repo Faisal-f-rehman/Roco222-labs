@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC   -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o  -L/home/faisal/roco222/arm_project/arm_bot_project/src/jointstate_to_plain/build/gtest/src -lpthread -Wl,-rpath,/home/faisal/roco222/arm_project/arm_bot_project/src/jointstate_to_plain/build/gtest/src 

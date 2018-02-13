@@ -1,0 +1,28 @@
+/home/faisal/roco222/arm_project/arm_bot_project/install/_setup_util.py
+/home/faisal/roco222/arm_project/arm_bot_project/install/env.sh
+/home/faisal/roco222/arm_project/arm_bot_project/install/setup.bash
+/home/faisal/roco222/arm_project/arm_bot_project/install/setup.sh
+/home/faisal/roco222/arm_project/arm_bot_project/install/setup.zsh
+/home/faisal/roco222/arm_project/arm_bot_project/install/.rosinstall
+/home/faisal/roco222/arm_project/arm_bot_project/install/lib/pkgconfig/arm_bot.pc
+/home/faisal/roco222/arm_project/arm_bot_project/install/share/arm_bot/cmake/arm_botConfig.cmake
+/home/faisal/roco222/arm_project/arm_bot_project/install/share/arm_bot/cmake/arm_botConfig-version.cmake
+/home/faisal/roco222/arm_project/arm_bot_project/install/share/arm_bot/package.xml
+/home/faisal/roco222/arm_project/arm_bot_project/install/share/arm_bot/meshes/wrist_ver.STL
+/home/faisal/roco222/arm_project/arm_bot_project/install/share/arm_bot/meshes/base_plate.STL
+/home/faisal/roco222/arm_project/arm_bot_project/install/share/arm_bot/meshes/Bearing.STL
+/home/faisal/roco222/arm_project/arm_bot_project/install/share/arm_bot/meshes/elbow_to_wrist_shaft.STL
+/home/faisal/roco222/arm_project/arm_bot_project/install/share/arm_bot/meshes/elbow_ver_top.STL
+/home/faisal/roco222/arm_project/arm_bot_project/install/share/arm_bot/meshes/main_base.STL
+/home/faisal/roco222/arm_project/arm_bot_project/install/share/arm_bot/meshes/elbow_base.STL
+/home/faisal/roco222/arm_project/arm_bot_project/install/share/arm_bot/meshes/servo/servo.STL
+/home/faisal/roco222/arm_project/arm_bot_project/install/share/arm_bot/meshes/servo/servo bit only.STL
+/home/faisal/roco222/arm_project/arm_bot_project/install/share/arm_bot/meshes/servo/servo with bit.STL
+/home/faisal/roco222/arm_project/arm_bot_project/install/share/arm_bot/meshes/control_arm.STL
+/home/faisal/roco222/arm_project/arm_bot_project/install/share/arm_bot/meshes/claw_base.STL
+/home/faisal/roco222/arm_project/arm_bot_project/install/share/arm_bot/meshes/claw_finger.STL
+/home/faisal/roco222/arm_project/arm_bot_project/install/share/arm_bot/meshes/elbow_ver_link.STL
+/home/faisal/roco222/arm_project/arm_bot_project/install/share/arm_bot/meshes/control_arm_fitter.STL
+/home/faisal/roco222/arm_project/arm_bot_project/install/share/arm_bot/meshes/control_arm_shaft.STL
+/home/faisal/roco222/arm_project/arm_bot_project/install/share/arm_bot/launch/display.launch
+/home/faisal/roco222/arm_project/arm_bot_project/install/share/arm_bot/urdf/arm_bot.urdf
